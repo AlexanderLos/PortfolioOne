@@ -1,0 +1,13 @@
+.NavBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(180, 180, 189);
+
+}
+
+
+.NavLinks {
+    display: flex;
+    gap: 20px
+}
