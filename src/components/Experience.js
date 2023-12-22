@@ -1,4 +1,3 @@
-import React from 'react';
 import '../css/Experience.css';
 
 function Experience() {
@@ -8,7 +7,7 @@ function Experience() {
         <h2 className="title">Experience</h2>
         <div className="job-entry">
           <div className="time-period">
-            July 2023 - Present
+            July 2023 - December 2023
           </div>
           <div className="job-details">
             <h3>Software Engineer Apprentice</h3>

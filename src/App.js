@@ -3,6 +3,7 @@ import './css/App.css';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Experience from './components/Experience';
+import Projects from './components/Projects'
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
       <section id="experience">
       <Experience />
       </section>
-      <section id="projects">Projects Section</section>
+      <section id="projects">
+       <Projects />
+      </section>
       <section id="skills">Skills Section</section>
       <section id="contact">Contact Section</section>
       <Footer />
