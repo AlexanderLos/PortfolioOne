@@ -1,8 +1,44 @@
+import '../css/Skills.css';
+
 function Skills() {
   return (
-    <div>Skills</div>
-  )
+    <div className="skills-container">
+      <h2>Skills</h2>
+      <div className="skills-flex-container">
+        <div className="skill-section">
+          <h3>Web Development & Programming Languages</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby on Rails</li>
+          </ul>
+        </div>
+
+        <div className="skill-section">
+          <h3>Frameworks & Libraries</h3>
+          <ul>
+            <li>Django</li>
+            <li>Express.js</li>
+            <li>React.js</li>
+            <li>Angular</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+
+        <div className="skill-section">
+          <h3>Database Management</h3>
+          <ul>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Mongoose ODM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Skills
-
+export default Skills;

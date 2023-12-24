@@ -18,9 +18,11 @@ function About() {
           />
         </h1>
         <p>Originally from Ponce, Puerto Rico | Based in Miami, Florida</p>
-        <p>Full Stack Developer with a strong foundation in economics from Florida 
-           International University. My focus lies in developing robust and 
-           innovative full-stack applications, blending technical abilities with analytical insight.</p>
+        <p>Full Stack Developer with a strong foundation in economics from Florida International University...</p>
+        <div className="social-links">
+            <a href="https://github.com/AlexanderLos" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/alexander-de-los-santos/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
       </div>
     </div>
   );
