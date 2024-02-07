@@ -53,3 +53,9 @@
     width: calc(100% - 40px); 
     text-align: left;
 }
+
+@media (max-width: 768px) {
+    .contact-form button {
+        width: 80%; 
+    }
+}

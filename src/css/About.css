@@ -28,9 +28,12 @@
   .profilePic {
       margin-bottom: 20px;
       margin-right: 0;
+      width: 50%; 
+      height: auto; 
   }
   .text {
-      padding: 20px;
+      padding: 10px;
+      max-width: 80%; 
   }
 }
 
