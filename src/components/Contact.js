@@ -29,8 +29,9 @@ function Contact() {
     };
 
     return (
+        <>
+        <h2>Contact</h2>
         <div className="contact-container">
-            <h2>Contact</h2>
             <div className="contact-form">
                 <form onSubmit={sendEmail}>
                     <input type="text" name="user_name" placeholder="Your Name" value={formValues.user_name} onChange={handleChange} required />
@@ -41,6 +42,7 @@ function Contact() {
                 {submitMessage && <div className="submit-message">{submitMessage}</div>}
             </div>
         </div>
+        </>
     );
 }
 

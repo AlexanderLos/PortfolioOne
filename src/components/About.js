@@ -10,7 +10,7 @@ function About() {
         <h1>Hey! My name's Alex. <br/>
           <Typewriter
             options={{
-              strings: ['Team-Player.', 'Software Engineer.', 'Full-Stack Developer.'],
+              strings: ['Team-Player.', 'Software Engineer.', 'Full-Stack Developer.', 'Data Scientist.', 'Economist.'],
               autoStart: true,
               loop: true,
               deleteSpeed: 50,
