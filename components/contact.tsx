@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { profile } from "@/lib/data";
 import { Eyebrow, Section } from "@/components/ui";
 
@@ -22,16 +21,6 @@ export function Contact() {
   return (
     <Section id="contact">
       <div className="reveal flex flex-col items-center py-6 text-center md:py-14">
-        <div className="relative mb-9 size-24 overflow-hidden rounded-full border border-border-strong">
-          <Image
-            src="/profile.png"
-            alt="Alexander De Los Santos"
-            fill
-            sizes="96px"
-            className="object-cover object-[62%_30%] grayscale"
-          />
-          <div aria-hidden className="absolute inset-0 bg-teal/10" />
-        </div>
         <Eyebrow as="h2" index="05" label="Get in touch" centered />
         <a
           href={`mailto:${profile.email}`}

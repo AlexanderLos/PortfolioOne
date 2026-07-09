@@ -1,7 +1,9 @@
+import { ThemeToggle } from "@/components/theme-toggle";
+
 export function Nav() {
   const items: { label: string; href: string }[] = [
-    { label: "Work", href: "#work" },
     { label: "Experience", href: "#experience" },
+    { label: "Work", href: "#work" },
     { label: "Skills", href: "#skills" },
     { label: "Contact", href: "#contact" },
   ];
@@ -18,8 +20,8 @@ export function Nav() {
         >
           A. De Los Santos
         </a>
-        <div className="flex items-center gap-6">
-          <ul className="hidden items-center gap-6 font-mono text-[0.6875rem] uppercase tracking-[0.18em] sm:flex">
+        <div className="flex items-center gap-4 md:gap-6">
+          <ul className="hidden items-center gap-6 font-mono text-[0.6875rem] uppercase tracking-[0.18em] md:flex">
             {items.map((item) => (
               <li key={item.href}>
                 <a
@@ -31,9 +33,10 @@ export function Nav() {
               </li>
             ))}
           </ul>
+          <ThemeToggle />
           <a
             href="#contact"
-            className="flex items-center gap-2 rounded-full border border-border bg-raised px-3.5 py-1.5 font-mono text-[0.625rem] font-medium uppercase tracking-[0.18em] text-fg transition-colors hover:border-border-strong"
+            className="flex items-center gap-2 whitespace-nowrap rounded-full border border-border bg-raised px-3.5 py-1.5 font-mono text-[0.625rem] font-medium uppercase tracking-[0.18em] text-fg transition-colors hover:border-border-strong"
           >
             <span aria-hidden className="pulse size-2 rounded-full bg-coral" />
             Open to work

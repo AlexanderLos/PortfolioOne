@@ -23,7 +23,7 @@ function Frame({
 }) {
   return (
     <figure
-      className={`overflow-hidden rounded-xl border border-border border-t-2 border-t-teal bg-raised shadow-[0_0_80px_rgb(74_158_142/0.07),0_24px_48px_rgb(0_0_0/0.5)] transition-transform duration-300 hover:-translate-y-[3px] ${className}`}
+      className={`overflow-hidden rounded-xl border border-border border-t-2 border-t-teal bg-raised [box-shadow:var(--frame-shadow)] transition-transform duration-300 hover:-translate-y-[3px] ${className}`}
     >
       <figcaption className="flex items-baseline justify-between gap-4 border-b border-border bg-raised px-4 py-2.5 font-mono text-[0.625rem] uppercase tracking-[0.18em]">
         <span className="whitespace-nowrap text-muted">{fig}</span>
@@ -61,7 +61,7 @@ function Metric({
   tone: "teal" | "coral";
 }) {
   return (
-    <div className="rounded-lg border border-border bg-panel p-4 shadow-[0_12px_32px_rgb(0_0_0/0.45)]">
+    <div className="rounded-lg border border-border bg-panel p-4 [box-shadow:var(--card-shadow)]">
       <p className="font-mono text-[0.625rem] font-medium uppercase tracking-[0.18em] text-subtle">
         {label}
       </p>
@@ -88,9 +88,9 @@ export function Oakrift() {
   const [drift, desk] = oakrift.screenshots;
 
   return (
-    <Section id="work" flush>
+    <Section id="work">
       <div className="reveal">
-        <Eyebrow index="01" label="Featured work · 2025 — Present" />
+        <Eyebrow index="02" label="Featured work · 2025 — Present" />
         <h2 className="mt-6 max-w-3xl font-display text-[clamp(1.75rem,3.5vw,2.5rem)] font-semibold leading-[1.15] tracking-[-0.025em] text-fg">
           Oakrift — media intelligence, built solo.
         </h2>
@@ -122,7 +122,7 @@ export function Oakrift() {
                 key={row.k}
                 className="flex items-baseline justify-between gap-6 border-t border-border py-3.5 last:border-b"
               >
-                <dt className="font-mono text-[0.6875rem] font-medium uppercase tracking-[0.18em] text-subtle">
+                <dt className="font-mono text-[0.625rem] font-medium uppercase tracking-[0.18em] text-subtle">
                   {row.k}
                 </dt>
                 <dd
@@ -199,7 +199,7 @@ export function Oakrift() {
           href="#experience"
           className="rounded-lg border border-border px-5 py-3 font-mono text-xs font-medium uppercase tracking-[0.14em] text-muted transition-colors hover:border-border-strong hover:text-fg"
         >
-          How it was built <span aria-hidden>↓</span>
+          How it was built <span aria-hidden>↑</span>
         </a>
       </div>
     </Section>

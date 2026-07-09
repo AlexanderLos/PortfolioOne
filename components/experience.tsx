@@ -3,11 +3,11 @@ import { Eyebrow, Section } from "@/components/ui";
 
 export function Experience() {
   return (
-    <Section id="experience">
+    <Section id="experience" flush>
       <div className="grid gap-10 md:grid-cols-[11rem_1fr]">
         <div>
           <div className="md:sticky md:top-24">
-            <Eyebrow as="h2" index="02" label="Experience" />
+            <Eyebrow as="h2" index="01" label="Experience" />
           </div>
         </div>
         <ol>
@@ -16,7 +16,7 @@ export function Experience() {
               key={entry.company}
               className="group border-t border-border first:border-t-0"
             >
-              <div className="-mx-4 gap-6 rounded-lg px-4 py-8 transition-colors group-first:pt-0 md:grid md:grid-cols-[9rem_1fr] hover:bg-raised/60">
+              <div className="-mx-4 gap-6 rounded-lg px-4 py-8 transition-colors group-first:pt-0 md:grid md:grid-cols-[10.5rem_1fr] hover:bg-raised/60">
                 <p className="pt-0.5 font-mono text-[0.6875rem] uppercase tracking-[0.14em] tabular-nums text-subtle">
                   {entry.period}
                 </p>
@@ -32,7 +32,7 @@ export function Experience() {
                       {entry.company}
                     </span>
                     <span className="font-normal text-muted">
-                      · {entry.role}
+                      {entry.role}
                     </span>
                   </h3>
                   <ul className="mt-3.5 space-y-2.5">

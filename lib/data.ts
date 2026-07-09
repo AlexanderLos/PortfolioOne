@@ -1,7 +1,7 @@
 export const profile = {
   name: "Alexander De Los Santos",
   title: "AI Product Engineer",
-  location: "Miramar, FL",
+  location: "Miami, FL",
   email: "alexander.dlosant@gmail.com",
   github: "https://github.com/AlexanderLos",
   linkedin: "https://www.linkedin.com/in/alexander-de-los-santos/",
@@ -19,6 +19,18 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
+    company: "Optum",
+    role: "Mid-Level Software Engineer (Contract)",
+    period: "Mar 2025 — Jun 2026",
+    location: "Remote",
+    highlights: [
+      "Owned critical .NET and Hangfire background jobs for healthcare claims processing across dev and staging. Diagnosed and fixed multi-layered production failures in managed-identity authentication and database provisioning that others couldn't isolate.",
+      "Cut a SQL Server data extraction pipeline from 11 hours to under 4 minutes.",
+      "Authored Terraform modules provisioning Event Hubs, Storage, and RBAC across FedRAMP-compliant Azure Government Cloud environments.",
+      "Kept core systems running as the team contracted, owning everything from root-cause debugging through cross-environment deployment.",
+    ],
+  },
+  {
     company: "Oakrift",
     role: "Founder & Engineer",
     period: "Sep 2025 — Present",
@@ -28,18 +40,6 @@ export const experience: ExperienceEntry[] = [
       "Solo-built and launched an AI-powered media intelligence B2B SaaS generating recurring enterprise revenue, with an active international sales pipeline.",
       "Direct Claude Code agents across the full codebase — multi-agent orchestration, dynamic workflows, and pre-tool-use governance hooks.",
       "Cut LLM and third-party API costs by ~50% through prompt caching and quota-efficient endpoint migration.",
-    ],
-  },
-  {
-    company: "Optum",
-    role: "Mid-Level Software Engineer (Contract)",
-    period: "Mar 2025 — Jun 2026",
-    location: "Remote",
-    highlights: [
-      "Built .NET microservices for healthcare claims processing with Hangfire for background job automation.",
-      "Optimized a SQL Server data extraction pipeline, reducing runtime from 11 hours to under 4 minutes.",
-      "Authored Terraform modules for Event Hubs, Storage, and RBAC provisioning across environments.",
-      "Designed CI/CD pipelines in GitHub Actions covering build, test, and deployment.",
     ],
   },
   {

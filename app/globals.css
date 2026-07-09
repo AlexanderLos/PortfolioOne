@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
-@theme {
-  --color-bg: #0b0c10;
-  --color-raised: #121319;
-  --color-panel: #15161b;
-  --color-border: #23252d;
-  --color-border-strong: #2e3038;
-  --color-fg: #e8eaee;
-  --color-muted: #9aa0aa;
-  --color-subtle: #7d838d;
-  --color-teal: #4a9e8e;
-  --color-teal-bright: #64c0ae;
-  --color-coral: #d17162;
+@theme inline {
+  --color-bg: var(--bg);
+  --color-raised: var(--raised);
+  --color-panel: var(--panel);
+  --color-border: var(--border-hairline);
+  --color-border-strong: var(--border-strong);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-teal: var(--teal);
+  --color-teal-bright: var(--teal-emphasis);
+  --color-coral: var(--coral);
 
   --font-display: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -19,11 +19,41 @@
 }
 
 :root {
+  --bg: #f7f8f9;
+  --raised: #ffffff;
+  --panel: #eff1f3;
+  --border-hairline: #e2e5e9;
+  --border-strong: #cbd1d7;
+  --fg: #15181d;
+  --muted: #4b545e;
+  --subtle: #647079;
+  --teal: #2f7d6d;
+  --teal-emphasis: #245f53;
+  --coral: #b4513e;
+  --frame-shadow: 0 24px 48px rgb(21 24 29 / 0.12);
+  --card-shadow: 0 12px 32px rgb(21 24 29 / 0.1);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b0c10;
+  --raised: #121319;
+  --panel: #15161b;
+  --border-hairline: #23252d;
+  --border-strong: #2e3038;
+  --fg: #e8eaee;
+  --muted: #9aa0aa;
+  --subtle: #7d838d;
+  --teal: #4a9e8e;
+  --teal-emphasis: #64c0ae;
+  --coral: #d17162;
+  --frame-shadow: 0 0 80px rgb(74 158 142 / 0.07), 0 24px 48px rgb(0 0 0 / 0.5);
+  --card-shadow: 0 12px 32px rgb(0 0 0 / 0.45);
   color-scheme: dark;
 }
 
 * {
-  border-color: var(--color-border);
+  border-color: var(--border-hairline);
 }
 
 html {
@@ -31,8 +61,8 @@ html {
 }
 
 body {
-  background: var(--color-bg);
-  color: var(--color-fg);
+  background: var(--bg);
+  color: var(--fg);
   font-family: var(--font-sans);
   font-feature-settings: "ss01", "cv11";
   -webkit-font-smoothing: antialiased;
@@ -41,13 +71,13 @@ body {
 }
 
 ::selection {
-  background: var(--color-teal);
-  color: #0b0c10;
+  background: var(--teal);
+  color: var(--bg);
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--color-teal);
+  outline: 2px solid var(--teal);
   outline-offset: 3px;
   border-radius: 2px;
 }
