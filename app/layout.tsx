@@ -1,17 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, Inter_Tight, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-
-const instrumentSerif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-instrument-serif",
-  display: "swap",
-});
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  variable: "--font-inter-tight",
   display: "swap",
 });
 
@@ -21,17 +20,28 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://alexanderdelossantos.com";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://alexanderdelossantos.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Alexander De Los Santos — Software Engineer",
+    default: "Alexander De Los Santos — AI Product Engineer",
     template: "%s — Alexander De Los Santos",
   },
   description:
-    "Software engineer in Miami. Healthcare infrastructure at Optum, and building Oakrift — a B2B media intelligence platform.",
-  keywords: ["Alexander De Los Santos", "Software Engineer", "Miami", "Optum", "Oakrift", "Next.js", "TypeScript"],
+    "AI product engineer shipping LLM-powered SaaS end to end. Founder of Oakrift — a revenue-generating media intelligence platform. Enterprise backend foundation in healthcare (.NET, Azure, Kubernetes).",
+  keywords: [
+    "Alexander De Los Santos",
+    "AI Product Engineer",
+    "Full-Stack SaaS",
+    "LLM",
+    "Oakrift",
+    "Claude Code",
+    "Next.js",
+    "TypeScript",
+    "Miami",
+  ],
   authors: [{ name: "Alexander De Los Santos" }],
   creator: "Alexander De Los Santos",
   openGraph: {
@@ -39,15 +49,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: "Alexander De Los Santos",
-    title: "Alexander De Los Santos — Software Engineer",
+    title: "Alexander De Los Santos — AI Product Engineer",
     description:
-      "Software engineer in Miami. Healthcare infrastructure at Optum, and building Oakrift.",
+      "AI product engineer shipping LLM-powered SaaS end to end. Founder of Oakrift — a revenue-generating media intelligence platform.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alexander De Los Santos — Software Engineer",
+    title: "Alexander De Los Santos — AI Product Engineer",
     description:
-      "Software engineer in Miami. Healthcare infrastructure at Optum, and building Oakrift.",
+      "AI product engineer shipping LLM-powered SaaS end to end. Founder of Oakrift — a revenue-generating media intelligence platform.",
   },
   robots: {
     index: true,
@@ -59,10 +69,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fafaf7" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
-  ],
+  themeColor: "#0b0c10",
   width: "device-width",
   initialScale: 1,
 };
@@ -75,7 +82,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${instrumentSerif.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+      className={`${inter.variable} ${interTight.variable} ${jetbrainsMono.variable}`}
     >
       <body>{children}</body>
     </html>

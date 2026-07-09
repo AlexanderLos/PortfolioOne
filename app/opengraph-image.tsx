@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Alexander De Los Santos — Software Engineer";
+export const alt = "Alexander De Los Santos — AI Product Engineer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -11,59 +11,82 @@ export default async function OpengraphImage() {
         style={{
           width: "100%",
           height: "100%",
-          background: "#0a0a0a",
-          color: "#ededed",
+          background: "#0b0c10",
+          color: "#e8eaee",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "72px 80px",
-          fontFamily: "serif",
+          fontFamily: "sans-serif",
+          borderTop: "6px solid #4a9e8e",
         }}
       >
         <div
           style={{
             display: "flex",
             alignItems: "center",
-            gap: 12,
+            gap: 14,
             fontSize: 22,
-            color: "#8a8a85",
+            color: "#7d838d",
             fontFamily: "monospace",
-            letterSpacing: 2,
+            letterSpacing: 5,
             textTransform: "uppercase",
           }}
         >
-          <span style={{ display: "flex", color: "#f97316" }}>●</span>
-          <span style={{ display: "flex" }}>Alexander De Los Santos</span>
+          <div
+            style={{
+              display: "flex",
+              width: 12,
+              height: 12,
+              borderRadius: 12,
+              background: "#4a9e8e",
+            }}
+          />
+          <span style={{ display: "flex" }}>
+            AI Product Engineer — Full-Stack SaaS
+          </span>
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <div
-            style={{
-              fontSize: 120,
-              lineHeight: 0.95,
-              letterSpacing: -2,
-              color: "#ededed",
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
-            <span style={{ display: "flex" }}>Software engineer.</span>
-            <span style={{ display: "flex", color: "#8a8a85" }}>Miami, FL.</span>
-          </div>
+        <div
+          style={{
+            fontSize: 104,
+            lineHeight: 1.02,
+            letterSpacing: -4,
+            fontWeight: 700,
+            color: "#e8eaee",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <span style={{ display: "flex" }}>Alexander</span>
+          <span style={{ display: "flex" }}>De Los Santos</span>
+        </div>
 
-          <div
-            style={{
-              marginTop: 36,
-              fontSize: 26,
-              lineHeight: 1.4,
-              color: "#bdbdb8",
-              fontFamily: "sans-serif",
-              maxWidth: 900,
-              display: "flex",
-            }}
-          >
-            Healthcare infrastructure at Optum. Building Oakrift on the side.
-          </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            fontFamily: "monospace",
+            fontSize: 20,
+            letterSpacing: 3,
+            textTransform: "uppercase",
+            color: "#7d838d",
+            borderTop: "1px solid #23252d",
+            paddingTop: 28,
+          }}
+        >
+          <span style={{ display: "flex" }}>
+            Founder ·{" "}
+            <span
+              style={{ display: "flex", color: "#64c0ae", marginLeft: 12 }}
+            >
+              Oakrift
+            </span>
+          </span>
+          <span style={{ display: "flex", color: "#d17162" }}>
+            Revenue-generating AI SaaS
+          </span>
         </div>
       </div>
     ),

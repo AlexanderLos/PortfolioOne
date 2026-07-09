@@ -1,7 +1,9 @@
 import { Nav } from "@/components/nav";
 import { Hero } from "@/components/hero";
-import { About } from "@/components/about";
-import { Work } from "@/components/work";
+import { Oakrift } from "@/components/oakrift";
+import { Experience } from "@/components/experience";
+import { Skills } from "@/components/skills";
+import { Education } from "@/components/education";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 
@@ -10,15 +12,17 @@ export default function Home() {
     <>
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-3 focus:py-2 focus:bg-bg focus:text-fg focus:border focus:border-border"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:border focus:border-border focus:bg-bg focus:px-3 focus:py-2 focus:text-fg"
       >
         Skip to content
       </a>
       <Nav />
-      <main id="main" className="mx-auto max-w-2xl px-6 sm:px-8">
+      <main id="main">
         <Hero />
-        <About />
-        <Work />
+        <Oakrift />
+        <Experience />
+        <Skills />
+        <Education />
         <Contact />
       </main>
       <Footer />

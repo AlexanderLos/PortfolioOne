@@ -1,55 +1,48 @@
+import Image from "next/image";
 import { profile } from "@/lib/data";
+import { Eyebrow, Section } from "@/components/ui";
+
+export function GitHubIcon() {
+  return (
+    <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden>
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+    </svg>
+  );
+}
+
+export function LinkedInIcon() {
+  return (
+    <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden>
+      <path d="M13.63 13.63h-2.37V9.92c0-.89-.02-2.03-1.24-2.03-1.24 0-1.43.97-1.43 1.96v3.78H6.22V6h2.28v1.04h.03a2.5 2.5 0 0 1 2.25-1.23c2.4 0 2.85 1.58 2.85 3.64v4.18ZM3.54 4.96a1.38 1.38 0 1 1 0-2.75 1.38 1.38 0 0 1 0 2.75Zm1.19 8.67H2.35V6h2.38v7.63ZM14.82 0H1.18C.53 0 0 .52 0 1.16v13.68C0 15.48.53 16 1.18 16h13.63c.65 0 1.19-.52 1.19-1.16V1.16C16 .52 15.46 0 14.82 0Z" />
+    </svg>
+  );
+}
 
 export function Contact() {
-  const links = [
-    { label: profile.email, href: `mailto:${profile.email}`, emphasis: true },
-    { label: "github.com/AlexanderLos", href: profile.github },
-    { label: "linkedin.com/in/alexander-de-los-santos", href: profile.linkedin },
-    { label: "resume.pdf", href: profile.resume },
-  ];
-
   return (
-    <section
-      id="contact"
-      aria-labelledby="contact-label"
-      className="border-t border-border pt-16 pb-24 grid grid-cols-1 sm:grid-cols-[8rem_1fr] gap-6 sm:gap-10"
-    >
-      <p
-        id="contact-label"
-        className="font-mono text-[0.7rem] uppercase tracking-[0.22em] text-subtle pt-1"
-      >
-        Contact
-      </p>
-      <div className="max-w-[34rem]">
-        <p className="text-[1.0625rem] leading-[1.7] text-fg/90 mb-6">
-          The best way to reach me is email. I&rsquo;m open to senior software
-          roles, contract work, and meaningful conversations about
-          infrastructure, healthcare, or anything you&rsquo;re building.
+    <Section id="contact">
+      <div className="reveal flex flex-col items-center py-6 text-center md:py-14">
+        <div className="relative mb-9 size-24 overflow-hidden rounded-full border border-border-strong">
+          <Image
+            src="/profile.png"
+            alt="Alexander De Los Santos"
+            fill
+            sizes="96px"
+            className="object-cover object-[62%_30%] grayscale"
+          />
+          <div aria-hidden className="absolute inset-0 bg-teal/10" />
+        </div>
+        <Eyebrow as="h2" index="05" label="Get in touch" centered />
+        <a
+          href={`mailto:${profile.email}`}
+          className="mt-7 break-all font-display text-[clamp(1.5rem,4.5vw,3rem)] font-semibold tracking-[-0.025em] text-fg underline decoration-teal decoration-2 underline-offset-8 transition-colors hover:decoration-teal-bright sm:break-normal"
+        >
+          {profile.email}
+        </a>
+        <p className="mt-7 max-w-md text-[1.0625rem] leading-[1.7] text-muted">
+          Open to AI product engineering and full-stack roles.
         </p>
-        <ul className="space-y-2.5">
-          {links.map((link) => {
-            const newTab = !link.href.startsWith("mailto:");
-            return (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  {...(newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                  className={`group inline-flex items-center gap-2 font-mono text-sm transition-colors ${
-                    link.emphasis ? "text-fg hover:text-accent" : "text-muted hover:text-fg"
-                  }`}
-                >
-                  <span className="border-b border-current/30 group-hover:border-current pb-0.5">
-                    {link.label}
-                  </span>
-                  <span aria-hidden className="text-subtle group-hover:text-current">
-                    ↗
-                  </span>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
       </div>
-    </section>
+    </Section>
   );
 }

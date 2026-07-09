@@ -18,6 +18,9 @@
 .DS_Store
 *.pem
 
+# source material staging (copied into public/)
+/Version_2_Imports
+
 # debug
 npm-debug.log*
 yarn-debug.log*
