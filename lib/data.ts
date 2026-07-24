@@ -31,6 +31,17 @@ export const experience: ExperienceEntry[] = [
     ],
   },
   {
+    company: "Accenture",
+    role: "IT Consultant (Contract)",
+    period: "Aug 2024 — Mar 2025",
+    location: "Remote",
+    highlights: [
+      "Built Azure Data Factory pipelines automating healthcare data workflows and integrations.",
+      "Developed Azure Databricks notebooks and SQL stored procedures for healthcare data transformation and analysis.",
+      "Managed CI/CD releases with Azure DevOps Pipelines, deploying data workflows across dev, test, and production environments.",
+    ],
+  },
+  {
     company: "Oakrift",
     role: "Founder & Engineer",
     period: "Sep 2025 — Present",
@@ -40,16 +51,6 @@ export const experience: ExperienceEntry[] = [
       "Solo-built and launched an AI-powered media intelligence B2B SaaS, live in production with an active international sales pipeline.",
       "Direct Claude Code agents across the full codebase — multi-agent orchestration, dynamic workflows, and pre-tool-use governance hooks.",
       "Cut LLM and third-party API costs by ~90% through prompt caching and quota-efficient endpoint migration.",
-    ],
-  },
-  {
-    company: "Accenture",
-    role: "IT Consultant (Contract)",
-    period: "Aug 2024 — Mar 2025",
-    location: "Remote",
-    highlights: [
-      "Built Azure Data Factory pipelines automating healthcare data workflows and integrations.",
-      "Delivered scalable cloud-native solutions on Azure with cross-functional data engineering teams.",
     ],
   },
   {
