@@ -11,7 +11,7 @@ export function Hobbies() {
     <Section id="hobbies">
       <div className="reveal">
         <Eyebrow as="h2" index="06" label="Off the clock" />
-        <div className="mt-10 grid gap-x-8 gap-y-12 lg:grid-cols-3">
+        <div className="mt-10 grid gap-x-12 gap-y-12 sm:grid-cols-2">
           <div>
             <p className="font-mono text-[0.625rem] font-medium tabular-nums tracking-[0.18em] text-subtle">
               01
@@ -40,6 +40,17 @@ export function Hobbies() {
           <div>
             <p className="font-mono text-[0.625rem] font-medium tabular-nums tracking-[0.18em] text-subtle">
               03
+            </p>
+            <h3 className="mt-2 font-display text-xl font-semibold tracking-[-0.02em] text-fg">
+              Golf
+            </h3>
+            <p className="mt-2.5 text-[0.9375rem] leading-[1.7] text-muted">
+              It&apos;d be a crime to live in Florida and not play golf.
+            </p>
+          </div>
+          <div>
+            <p className="font-mono text-[0.625rem] font-medium tabular-nums tracking-[0.18em] text-subtle">
+              04
             </p>
             <h3 className="mt-2 font-display text-xl font-semibold tracking-[-0.02em] text-fg">
               Food
