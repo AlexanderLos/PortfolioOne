@@ -73,8 +73,8 @@ export function Oakrift() {
             {[
               {
                 k: "Status",
-                v: "Revenue-generating",
-                cls: "text-coral",
+                v: "Active",
+                cls: "text-teal",
               },
               { k: "Team", v: "1 — design, code, ops", cls: "text-fg" },
               {

@@ -36,9 +36,8 @@ export function Nav() {
           <ThemeToggle />
           <a
             href="#contact"
-            className="flex items-center gap-2 whitespace-nowrap rounded-full border border-border bg-raised px-3.5 py-1.5 font-mono text-[0.625rem] font-medium uppercase tracking-[0.18em] text-fg transition-colors hover:border-border-strong"
+            className="whitespace-nowrap rounded-md bg-fg px-4 py-2 font-mono text-[0.625rem] font-medium uppercase tracking-[0.18em] text-bg transition-opacity hover:opacity-75"
           >
-            <span aria-hidden className="pulse size-2 rounded-full bg-coral" />
             Open to work
           </a>
         </div>

@@ -1,6 +1,6 @@
 export const profile = {
   name: "Alexander De Los Santos",
-  title: "AI Product Engineer",
+  title: "Full Stack Software Engineer",
   location: "Miami, FL",
   email: "alexander.dlosant@gmail.com",
   github: "https://github.com/AlexanderLos",
@@ -37,7 +37,7 @@ export const experience: ExperienceEntry[] = [
     location: "Miami, FL",
     current: true,
     highlights: [
-      "Solo-built and launched an AI-powered media intelligence B2B SaaS generating recurring enterprise revenue, with an active international sales pipeline.",
+      "Solo-built and launched an AI-powered media intelligence B2B SaaS, live in production with an active international sales pipeline.",
       "Direct Claude Code agents across the full codebase — multi-agent orchestration, dynamic workflows, and pre-tool-use governance hooks.",
       "Cut LLM and third-party API costs by ~50% through prompt caching and quota-efficient endpoint migration.",
     ],
@@ -121,7 +121,7 @@ export const skillGroups: SkillGroup[] = [
 export const oakrift = {
   url: "https://oakrift.com",
   description:
-    "An enterprise B2B SaaS that reads the media landscape for its clients — and it generates recurring revenue today, with an active international sales pipeline. Every layer, from ingestion to billing, designed, shipped, and operated by one engineer.",
+    "An enterprise B2B SaaS that reads the media landscape for its clients — live in production, with an active international sales pipeline. Every layer, from ingestion to billing, designed, shipped, and operated by one engineer.",
   features: [
     {
       title: "Research-augmented executive briefs",

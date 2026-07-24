@@ -29,7 +29,7 @@ export function Contact() {
           {profile.email}
         </a>
         <p className="mt-7 max-w-md text-[1.0625rem] leading-[1.7] text-muted">
-          Open to AI product engineering and full-stack roles.
+          Open to full stack and AI engineering roles.
         </p>
       </div>
     </Section>

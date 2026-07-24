@@ -35,18 +35,17 @@ export function Hero() {
             De Los Santos
           </h1>
           <p className="mt-8 max-w-[38rem] text-lg leading-[1.7] text-muted">
-            AI product engineer who ships LLM-powered SaaS end to end. Built
-            healthcare claims infrastructure at Optum on .NET and Azure; now
-            solo founder of{" "}
+            Full stack software engineer who ships LLM-powered SaaS end to end.
+            Built healthcare claims infrastructure at Optum on .NET and Azure;
+            now solo founder of{" "}
             <a
               href="#work"
               className="font-medium text-fg underline decoration-teal/50 decoration-1 underline-offset-4 transition-colors hover:decoration-teal-bright"
             >
               Oakrift
             </a>{" "}
-            — a <span className="text-coral">revenue-generating</span> media
-            intelligence platform, built and operated with agentic development
-            workflows.
+            — a media intelligence platform, built and operated with agentic
+            development workflows.
           </p>
 
           <div className="mt-14 grid max-w-xl grid-cols-2 gap-px border border-border bg-border">

@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Alexander De Los Santos — AI Product Engineer";
+export const alt = "Alexander De Los Santos — Full Stack Software Engineer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -43,7 +43,7 @@ export default async function OpengraphImage() {
             }}
           />
           <span style={{ display: "flex" }}>
-            AI Product Engineer — Full-Stack SaaS
+            Full Stack Software Engineer — AI SaaS
           </span>
         </div>
 
@@ -85,7 +85,7 @@ export default async function OpengraphImage() {
             </span>
           </span>
           <span style={{ display: "flex", color: "#d17162" }}>
-            Revenue-generating AI SaaS
+            Media Intelligence SaaS
           </span>
         </div>
       </div>
