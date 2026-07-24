@@ -6,8 +6,6 @@ const spots = [
   { name: "Anthony's Runway 84", place: "Fort Lauderdale" },
 ];
 
-const stamps = ["China", "Spain", "Japan", "North America"];
-
 export function Hobbies() {
   return (
     <Section id="hobbies">
@@ -22,19 +20,9 @@ export function Hobbies() {
               Traveling
             </h3>
             <p className="mt-2.5 text-[0.9375rem] leading-[1.7] text-muted">
-              Three years, four regions. Nothing recalibrates how you see
-              problems like being somewhere you can&apos;t read the menu.
+              Been to China, Spain, and Japan recently, and traveled all over
+              North America.
             </p>
-            <ul className="mt-4 flex flex-wrap gap-2">
-              {stamps.map((stamp) => (
-                <li
-                  key={stamp}
-                  className="rounded-full border border-border px-3 py-1 font-mono text-[0.625rem] uppercase tracking-[0.14em] text-muted"
-                >
-                  {stamp}
-                </li>
-              ))}
-            </ul>
           </div>
           <div>
             <p className="font-mono text-[0.625rem] font-medium tabular-nums tracking-[0.18em] text-subtle">
@@ -44,8 +32,8 @@ export function Hobbies() {
               Hiking &amp; nature trails
             </h3>
             <p className="mt-2.5 text-[0.9375rem] leading-[1.7] text-muted">
-              The hard problems untangle a few miles from the nearest outlet.
-              Exhibit A: the photo at the top of this page.
+              I love long walks on the beach as much as I love rainforests and
+              parks.
             </p>
           </div>
           <div>
@@ -57,7 +45,7 @@ export function Hobbies() {
             </h3>
             <p className="mt-2.5 text-[0.9375rem] leading-[1.7] text-muted">
               On a long-running search for South Florida&apos;s best plates. If
-              you&apos;re reading this and ever in town, start here:
+              you&apos;re reading this and ever in the area, start here:
             </p>
             <ul className="mt-4 border-b border-border">
               {spots.map((spot) => (
