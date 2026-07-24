@@ -70,19 +70,6 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    label: "AI & Agentic Development",
-    skills: [
-      "Claude Code (multi-agent orchestration)",
-      "Claude API",
-      "OpenAI API",
-      "LLM application architecture",
-      "Embeddings & semantic analysis",
-      "RAG pipelines",
-      "LLM cost & quota optimization",
-      "MCP integrations",
-    ],
-  },
-  {
     label: "Languages",
     skills: ["TypeScript", "JavaScript", "C#", "Python", "SQL"],
   },
@@ -114,6 +101,19 @@ export const skillGroups: SkillGroup[] = [
       "Sentry",
       "App Insights",
       "Azure Monitor",
+    ],
+  },
+  {
+    label: "AI & Agentic Development",
+    skills: [
+      "Claude Code (multi-agent orchestration)",
+      "Claude API",
+      "OpenAI API",
+      "LLM application architecture",
+      "Embeddings & semantic analysis",
+      "RAG pipelines",
+      "LLM cost & quota optimization",
+      "MCP integrations",
     ],
   },
 ];

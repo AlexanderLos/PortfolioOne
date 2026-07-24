@@ -7,8 +7,8 @@ export function Skills() {
       <Eyebrow as="h2" index="03" label="Capabilities" />
       <div className="mt-10 grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
         {skillGroups.map((group, i) => {
-          const isHero = i === 0;
-          const isLast = i === skillGroups.length - 1;
+          const isHero = i === skillGroups.length - 1;
+          const fillsRow = i === skillGroups.length - 2;
           return (
             <div
               key={group.label}
@@ -16,7 +16,7 @@ export function Skills() {
                 isHero
                   ? "border-t-2 border-t-teal sm:col-span-2 lg:col-span-3"
                   : ""
-              } ${isLast ? "sm:col-span-2" : ""}`}
+              } ${fillsRow ? "sm:col-span-2 lg:col-span-2" : ""}`}
             >
               <h3 className="flex items-baseline justify-between gap-4 font-mono text-[0.6875rem] font-medium uppercase tracking-[0.18em] text-teal">
                 {group.label}
