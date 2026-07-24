@@ -39,7 +39,7 @@ export const experience: ExperienceEntry[] = [
     highlights: [
       "Solo-built and launched an AI-powered media intelligence B2B SaaS, live in production with an active international sales pipeline.",
       "Direct Claude Code agents across the full codebase — multi-agent orchestration, dynamic workflows, and pre-tool-use governance hooks.",
-      "Cut LLM and third-party API costs by ~50% through prompt caching and quota-efficient endpoint migration.",
+      "Cut LLM and third-party API costs by ~90% through prompt caching and quota-efficient endpoint migration.",
     ],
   },
   {
@@ -150,7 +150,7 @@ export const oakrift = {
     {
       title: "LLM cost engineering",
       detail:
-        "~50% cost reduction through prompt caching and quota-efficient endpoint migration.",
+        "~90% cost reduction through prompt caching and quota-efficient endpoint migration.",
     },
   ],
   screenshots: [
