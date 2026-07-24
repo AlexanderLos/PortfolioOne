@@ -21,7 +21,8 @@ export function Hobbies() {
             </h3>
             <p className="mt-2.5 text-[0.9375rem] leading-[1.7] text-muted">
               Been to China, Spain, and Japan recently, and traveled all over
-              North America.
+              North America — mainly looking for pizza (Chicago, New York,
+              Philadelphia, California, Massachusetts).
             </p>
           </div>
           <div>
