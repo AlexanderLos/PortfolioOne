@@ -20,11 +20,11 @@ export type ExperienceEntry = {
 export const experience: ExperienceEntry[] = [
   {
     company: "Optum",
-    role: "Mid-Level Software Engineer (Contract)",
+    role: "Software Engineer (Contract)",
     period: "Mar 2025 — Jun 2026",
     location: "Remote",
     highlights: [
-      "Owned critical .NET and Hangfire background jobs for healthcare claims processing across dev and staging. Diagnosed and fixed multi-layered production failures in managed-identity authentication and database provisioning that others couldn't isolate.",
+      "Owned critical .NET and Hangfire background jobs for healthcare claims processing. Resolved a production failure that had been open for months by diagnosing 13 distinct issues across managed-identity authentication, SQL schema ownership, and Terraform database provisioning, restoring the jobs across every Azure Government environment.",
       "Cut a SQL Server data extraction pipeline from 11 hours to under 4 minutes.",
       "Authored Terraform modules provisioning Event Hubs, Storage, and RBAC across FedRAMP-compliant Azure Government Cloud environments.",
       "Kept core systems running as the team contracted, owning everything from root-cause debugging through cross-environment deployment.",
@@ -48,9 +48,8 @@ export const experience: ExperienceEntry[] = [
     location: "Miami, FL",
     current: true,
     highlights: [
-      "Solo-built and launched an AI-powered media intelligence B2B SaaS, live in production with an active international sales pipeline.",
+      "Solo-built and launched an AI-powered media intelligence B2B SaaS, live in production and serving a paying enterprise customer.",
       "Direct Claude Code agents across the full codebase — multi-agent orchestration, dynamic workflows, and pre-tool-use governance hooks.",
-      "Cut LLM and third-party API costs by ~90% through prompt caching and quota-efficient endpoint migration.",
     ],
   },
   {
@@ -122,7 +121,7 @@ export const skillGroups: SkillGroup[] = [
 export const oakrift = {
   url: "https://oakrift.com",
   description:
-    "An enterprise B2B SaaS that reads the media landscape for its clients — live in production, with an active international sales pipeline. Every layer, from ingestion to billing, designed, shipped, and operated by one engineer.",
+    "An enterprise B2B SaaS that reads the media landscape for its clients — live in production, serving a paying enterprise customer. Every layer, from ingestion to billing, designed, shipped, and operated by one engineer.",
   features: [
     {
       title: "Research-augmented executive briefs",
@@ -147,11 +146,6 @@ export const oakrift = {
       title: "Production SaaS foundations",
       detail:
         "Stripe billing, auth, RBAC team workspaces, rate limiting, and security hardening — run solo, end to end.",
-    },
-    {
-      title: "LLM cost engineering",
-      detail:
-        "~90% cost reduction through prompt caching and quota-efficient endpoint migration.",
     },
   ],
   screenshots: [
@@ -187,7 +181,6 @@ export const education: EducationEntry[] = [
     institution: "Harvard Business School",
     credential: "CORe — Credential of Readiness",
     period: "2025 — 2026",
-    note: "Pass with High Honors",
   },
 ];
 
