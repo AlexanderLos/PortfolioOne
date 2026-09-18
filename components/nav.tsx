@@ -1,3 +1,4 @@
+import { MobileMenu } from "@/components/mobile-menu";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Nav() {
@@ -16,11 +17,11 @@ export function Nav() {
       >
         <a
           href="#top"
-          className="font-mono text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-fg transition-colors hover:text-teal-bright"
+          className="whitespace-nowrap font-mono text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-fg transition-colors hover:text-teal-bright"
         >
           A. De Los Santos
         </a>
-        <div className="flex items-center gap-4 md:gap-6">
+        <div className="flex items-center gap-3 md:gap-6">
           <ul className="hidden items-center gap-6 font-mono text-[0.6875rem] uppercase tracking-[0.18em] md:flex">
             {items.map((item) => (
               <li key={item.href}>
@@ -33,7 +34,10 @@ export function Nav() {
               </li>
             ))}
           </ul>
-          <ThemeToggle />
+          <div className="hidden md:block">
+            <ThemeToggle />
+          </div>
+          <MobileMenu items={items} />
           <a
             href="#contact"
             className="whitespace-nowrap rounded-md bg-fg px-4 py-2 font-mono text-[0.625rem] font-medium uppercase tracking-[0.18em] text-bg transition-opacity hover:opacity-75"
