@@ -1,12 +1,12 @@
 import { MobileMenu } from "@/components/mobile-menu";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Nav() {
   const items: { label: string; href: string }[] = [
-    { label: "Experience", href: "#experience" },
-    { label: "Work", href: "#work" },
-    { label: "Skills", href: "#skills" },
-    { label: "Contact", href: "#contact" },
+    { label: "Experience", href: "/#experience" },
+    { label: "Work", href: "/#work" },
+    { label: "Skills", href: "/#skills" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -16,7 +16,7 @@ export function Nav() {
         className="mx-auto flex h-14 max-w-6xl items-center justify-between px-5 sm:px-8"
       >
         <a
-          href="#top"
+          href="/"
           className="whitespace-nowrap font-mono text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-fg transition-colors hover:text-teal-bright"
         >
           A. De Los Santos
@@ -34,12 +34,9 @@ export function Nav() {
               </li>
             ))}
           </ul>
-          <div className="hidden md:block">
-            <ThemeToggle />
-          </div>
           <MobileMenu items={items} />
           <a
-            href="#contact"
+            href="/#contact"
             className="whitespace-nowrap rounded-md bg-fg px-4 py-2 font-mono text-[0.625rem] font-medium uppercase tracking-[0.18em] text-bg transition-opacity hover:opacity-75"
           >
             Open to work
