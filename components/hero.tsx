@@ -56,7 +56,7 @@ export function Hero() {
               <p className="mt-2 flex items-center gap-2 text-sm text-fg">
                 <span
                   aria-hidden
-                  className="pulse size-2 rounded-full bg-teal"
+                  className="pulse size-2 bg-teal"
                 />
                 Open to work
               </p>

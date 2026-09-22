@@ -26,7 +26,7 @@ export function Experience() {
                       {entry.current && (
                         <span
                           aria-hidden
-                          className="size-1.5 shrink-0 rounded-full bg-teal"
+                          className="size-1.5 shrink-0 bg-teal"
                         />
                       )}
                       {entry.company}
