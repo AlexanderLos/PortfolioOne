@@ -15,7 +15,8 @@ Open http://localhost:3000.
 
 ## Structure
 
-- `app/` — routes, layout, metadata, OG image, sitemap
+- `app/` — routes, layout, metadata, OG image, sitemap; `app/blog/` — blog index and post pages
 - `components/` — section components (hero, about, work, contact, footer, nav)
 - `lib/data.ts` — work timeline data
+- `lib/posts.ts` — blog posts (add a new entry to the `posts` array to publish)
 - `public/` — static assets (resume.pdf)

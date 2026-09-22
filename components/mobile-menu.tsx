@@ -1,11 +1,10 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import { ThemeToggle } from "@/components/theme-toggle";
 
-type Item = { label: string; href: string };
+import { navLinkClass, type NavItem } from "@/components/nav-links";
 
-export function MobileMenu({ items }: { items: Item[] }) {
+export function MobileMenu({ items }: { items: NavItem[] }) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
   const panelId = useId();
@@ -68,15 +67,12 @@ export function MobileMenu({ items }: { items: Item[] }) {
               <a
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="block py-3 text-subtle transition-colors hover:text-fg"
+                className={`block py-3 ${navLinkClass(item.accent)}`}
               >
                 {item.label}
               </a>
             </li>
           ))}
-          <li className="mt-1 flex items-center border-t border-border py-3">
-            <ThemeToggle />
-          </li>
         </ul>
       </div>
     </div>

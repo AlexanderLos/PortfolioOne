@@ -56,7 +56,7 @@ export function Hero() {
               <p className="mt-2 flex items-center gap-2 text-sm text-fg">
                 <span
                   aria-hidden
-                  className="pulse size-2 rounded-full bg-teal"
+                  className="pulse size-2 bg-teal"
                 />
                 Open to work
               </p>
@@ -91,8 +91,8 @@ export function Hero() {
           <Image
             src="/profile.png"
             alt="Alexander De Los Santos"
-            width={744}
-            height={514}
+            width={802}
+            height={780}
             priority
             sizes="(min-width: 1024px) 384px, calc(100vw - 2.5rem)"
             className="block h-auto w-full"

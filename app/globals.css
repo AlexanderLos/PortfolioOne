@@ -19,23 +19,6 @@
 }
 
 :root {
-  --bg: #f7f8f9;
-  --raised: #ffffff;
-  --panel: #eff1f3;
-  --border-hairline: #e2e5e9;
-  --border-strong: #cbd1d7;
-  --fg: #15181d;
-  --muted: #4b545e;
-  --subtle: #647079;
-  --teal: #2f7d6d;
-  --teal-emphasis: #245f53;
-  --coral: #b4513e;
-  --frame-shadow: 0 24px 48px rgb(21 24 29 / 0.12);
-  --card-shadow: 0 12px 32px rgb(21 24 29 / 0.1);
-  color-scheme: light;
-}
-
-:root[data-theme="dark"] {
   --bg: #0b0c10;
   --raised: #121319;
   --panel: #15161b;
