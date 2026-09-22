@@ -1,11 +1,12 @@
 import { MobileMenu } from "@/components/mobile-menu";
+import { navLinkClass, type NavItem } from "@/components/nav-links";
 
 export function Nav() {
-  const items: { label: string; href: string }[] = [
+  const items: NavItem[] = [
     { label: "Experience", href: "/#experience" },
     { label: "Work", href: "/#work" },
     { label: "Skills", href: "/#skills" },
-    { label: "Blog", href: "/blog" },
+    { label: "Blog", href: "/blog", accent: true },
     { label: "Contact", href: "/#contact" },
   ];
 
@@ -25,10 +26,7 @@ export function Nav() {
           <ul className="hidden items-center gap-6 font-mono text-[0.6875rem] uppercase tracking-[0.18em] md:flex">
             {items.map((item) => (
               <li key={item.href}>
-                <a
-                  href={item.href}
-                  className="text-subtle transition-colors hover:text-fg"
-                >
+                <a href={item.href} className={navLinkClass(item.accent)}>
                   {item.label}
                 </a>
               </li>
