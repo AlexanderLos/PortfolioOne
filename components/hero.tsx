@@ -91,8 +91,8 @@ export function Hero() {
           <Image
             src="/profile.png"
             alt="Alexander De Los Santos"
-            width={744}
-            height={514}
+            width={802}
+            height={780}
             priority
             sizes="(min-width: 1024px) 384px, calc(100vw - 2.5rem)"
             className="block h-auto w-full"
