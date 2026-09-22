@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 type Item = { label: string; href: string };
 
@@ -74,9 +73,6 @@ export function MobileMenu({ items }: { items: Item[] }) {
               </a>
             </li>
           ))}
-          <li className="mt-1 flex items-center border-t border-border py-3">
-            <ThemeToggle />
-          </li>
         </ul>
       </div>
     </div>
