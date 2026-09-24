@@ -18,7 +18,7 @@ export default async function OpengraphImage() {
           justifyContent: "space-between",
           padding: "72px 80px",
           fontFamily: "sans-serif",
-          borderTop: "6px solid #d9a441",
+          borderTop: "6px solid #ea7a2f",
         }}
       >
         <div
@@ -39,7 +39,7 @@ export default async function OpengraphImage() {
               width: 12,
               height: 12,
               borderRadius: 12,
-              background: "#d9a441",
+              background: "#ea7a2f",
             }}
           />
           <span style={{ display: "flex" }}>
@@ -79,7 +79,7 @@ export default async function OpengraphImage() {
           <span style={{ display: "flex" }}>
             Founder ·{" "}
             <span
-              style={{ display: "flex", color: "#f0bf63", marginLeft: 12 }}
+              style={{ display: "flex", color: "#f7954f", marginLeft: 12 }}
             >
               Oakrift
             </span>

@@ -100,9 +100,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative h-px w-full bg-border" aria-hidden>
-        <div className="absolute left-1/2 top-0 h-px w-24 -translate-x-1/2 bg-linear-to-r from-transparent via-accent to-transparent sm:left-[max(2rem,calc((100vw-72rem)/2+2rem))] sm:translate-x-0" />
-      </div>
+      <div className="h-px w-full bg-border" aria-hidden />
     </section>
   );
 }

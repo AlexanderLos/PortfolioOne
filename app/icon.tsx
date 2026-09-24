@@ -22,7 +22,7 @@ export default function Icon() {
         }}
       >
         <span style={{ display: "flex" }}>A</span>
-        <span style={{ display: "flex", color: "#d9a441" }}>.</span>
+        <span style={{ display: "flex", color: "#ea7a2f" }}>.</span>
       </div>
     ),
     { ...size }

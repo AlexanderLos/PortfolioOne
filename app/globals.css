@@ -15,7 +15,7 @@
 
   --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  --font-mono: var(--font-space-mono), ui-monospace, "SF Mono", Menlo, monospace;
 }
 
 :root {
@@ -27,10 +27,10 @@
   --fg: #e8eaee;
   --muted: #9aa0aa;
   --subtle: #7d838d;
-  --accent: #d9a441;
-  --accent-emphasis: #f0bf63;
+  --accent: #ea7a2f;
+  --accent-emphasis: #f7954f;
   --secondary: #8fa3c7;
-  --frame-shadow: 0 0 80px rgb(217 164 65 / 0.08), 0 24px 48px rgb(0 0 0 / 0.5);
+  --frame-shadow: 0 0 80px rgb(234 122 47 / 0.08), 0 24px 48px rgb(0 0 0 / 0.5);
   --card-shadow: 0 12px 32px rgb(0 0 0 / 0.45);
   color-scheme: dark;
 }
