@@ -31,7 +31,7 @@ export function PostBody({ blocks }: { blocks: PostBlock[] }) {
             return (
               <blockquote
                 key={i}
-                className="border-l-2 border-teal pl-5 font-display text-[1.375rem] font-medium leading-[1.35] tracking-[-0.015em] text-fg"
+                className="border-l-2 border-accent pl-5 font-display text-[1.375rem] font-medium leading-[1.35] tracking-[-0.015em] text-fg"
               >
                 {block.text}
               </blockquote>

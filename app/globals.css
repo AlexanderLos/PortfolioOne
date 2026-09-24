@@ -9,13 +9,13 @@
   --color-fg: var(--fg);
   --color-muted: var(--muted);
   --color-subtle: var(--subtle);
-  --color-teal: var(--teal);
-  --color-teal-bright: var(--teal-emphasis);
-  --color-coral: var(--coral);
+  --color-accent: var(--accent);
+  --color-accent-bright: var(--accent-emphasis);
+  --color-secondary: var(--secondary);
 
-  --font-display: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-jetbrains-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
 }
 
 :root {
@@ -27,10 +27,10 @@
   --fg: #e8eaee;
   --muted: #9aa0aa;
   --subtle: #7d838d;
-  --teal: #4a9e8e;
-  --teal-emphasis: #64c0ae;
-  --coral: #d17162;
-  --frame-shadow: 0 0 80px rgb(74 158 142 / 0.07), 0 24px 48px rgb(0 0 0 / 0.5);
+  --accent: #d9a441;
+  --accent-emphasis: #f0bf63;
+  --secondary: #8fa3c7;
+  --frame-shadow: 0 0 80px rgb(217 164 65 / 0.08), 0 24px 48px rgb(0 0 0 / 0.5);
   --card-shadow: 0 12px 32px rgb(0 0 0 / 0.45);
   color-scheme: dark;
 }
@@ -54,13 +54,13 @@ body {
 }
 
 ::selection {
-  background: var(--teal);
+  background: var(--accent);
   color: var(--bg);
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--teal);
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 2px;
 }

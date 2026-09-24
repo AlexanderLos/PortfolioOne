@@ -24,7 +24,7 @@ export function Contact() {
         <Eyebrow as="h2" index="05" label="Get in touch" centered />
         <a
           href={`mailto:${profile.email}`}
-          className="mt-7 break-all font-display text-[clamp(1.5rem,4.5vw,3rem)] font-semibold tracking-[-0.025em] text-fg underline decoration-teal decoration-2 underline-offset-8 transition-colors hover:decoration-teal-bright sm:break-normal"
+          className="mt-7 break-all font-display text-[clamp(1.5rem,4.5vw,3rem)] font-semibold tracking-[-0.025em] text-fg underline decoration-accent decoration-2 underline-offset-8 transition-colors hover:decoration-accent-bright sm:break-normal"
         >
           {profile.email}
         </a>

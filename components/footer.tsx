@@ -15,7 +15,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="text-subtle transition-colors hover:text-teal-bright"
+            className="text-subtle transition-colors hover:text-accent-bright"
           >
             <GitHubIcon />
           </a>
@@ -24,7 +24,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="text-subtle transition-colors hover:text-teal-bright"
+            className="text-subtle transition-colors hover:text-accent-bright"
           >
             <LinkedInIcon />
           </a>

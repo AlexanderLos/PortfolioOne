@@ -16,7 +16,7 @@ export function Eyebrow({
       }`}
     >
       <span className="flex items-center gap-2.5 whitespace-nowrap">
-        <span aria-hidden className="size-2 shrink-0 bg-teal" />
+        <span aria-hidden className="size-2 shrink-0 bg-accent" />
         {index && (
           <span className="tabular-nums">
             {index}

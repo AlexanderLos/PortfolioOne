@@ -18,7 +18,7 @@ export default async function OpengraphImage() {
           justifyContent: "space-between",
           padding: "72px 80px",
           fontFamily: "sans-serif",
-          borderTop: "6px solid #4a9e8e",
+          borderTop: "6px solid #d9a441",
         }}
       >
         <div
@@ -39,7 +39,7 @@ export default async function OpengraphImage() {
               width: 12,
               height: 12,
               borderRadius: 12,
-              background: "#4a9e8e",
+              background: "#d9a441",
             }}
           />
           <span style={{ display: "flex" }}>
@@ -79,12 +79,12 @@ export default async function OpengraphImage() {
           <span style={{ display: "flex" }}>
             Founder ·{" "}
             <span
-              style={{ display: "flex", color: "#64c0ae", marginLeft: 12 }}
+              style={{ display: "flex", color: "#f0bf63", marginLeft: 12 }}
             >
               Oakrift
             </span>
           </span>
-          <span style={{ display: "flex", color: "#d17162" }}>
+          <span style={{ display: "flex", color: "#8fa3c7" }}>
             Media Intelligence SaaS
           </span>
         </div>

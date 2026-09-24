@@ -23,7 +23,7 @@ function Frame({
 }) {
   return (
     <figure
-      className={`overflow-hidden rounded-xl border border-border border-t-2 border-t-teal bg-raised [box-shadow:var(--frame-shadow)] transition-transform duration-300 hover:-translate-y-[3px] ${className}`}
+      className={`overflow-hidden rounded-xl border border-border border-t-2 border-t-accent bg-raised [box-shadow:var(--frame-shadow)] transition-transform duration-300 hover:-translate-y-[3px] ${className}`}
     >
       <figcaption className="flex items-baseline justify-between gap-4 border-b border-border bg-raised px-4 py-2.5 font-mono text-[0.625rem] uppercase tracking-[0.18em]">
         <span className="whitespace-nowrap text-muted">{fig}</span>
@@ -130,7 +130,7 @@ export function Oakrift() {
           href={oakrift.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-lg bg-teal px-5 py-3 font-mono text-xs font-medium uppercase tracking-[0.14em] text-bg transition-colors hover:bg-teal-bright"
+          className="rounded-lg bg-accent px-5 py-3 font-mono text-xs font-medium uppercase tracking-[0.14em] text-bg transition-colors hover:bg-accent-bright"
         >
           Visit oakrift.com <span aria-hidden>↗</span>
         </a>

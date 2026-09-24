@@ -21,7 +21,7 @@ export function Education() {
                   <p className="flex flex-wrap items-center gap-2.5 text-[1.0625rem] font-medium text-fg">
                     {entry.institution}
                     {entry.note && (
-                      <span className="rounded-full bg-teal/10 px-2.5 py-1 font-mono text-[0.625rem] font-medium uppercase tracking-[0.14em] text-teal-bright">
+                      <span className="rounded-full bg-accent/10 px-2.5 py-1 font-mono text-[0.625rem] font-medium uppercase tracking-[0.14em] text-accent-bright">
                         {entry.note}
                       </span>
                     )}

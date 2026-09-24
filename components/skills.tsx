@@ -14,11 +14,11 @@ export function Skills() {
               key={group.label}
               className={`bg-bg p-6 ${
                 isHero
-                  ? "border-t-2 border-t-teal sm:col-span-2 lg:col-span-3"
+                  ? "border-t-2 border-t-accent sm:col-span-2 lg:col-span-3"
                   : ""
               } ${fillsRow ? "sm:col-span-2 lg:col-span-2" : ""}`}
             >
-              <h3 className="flex items-baseline justify-between gap-4 font-mono text-[0.6875rem] font-medium uppercase tracking-[0.18em] text-teal">
+              <h3 className="flex items-baseline justify-between gap-4 font-mono text-[0.6875rem] font-medium uppercase tracking-[0.18em] text-accent">
                 {group.label}
                 <span className="tabular-nums text-subtle">
                   {String(group.skills.length).padStart(2, "0")}

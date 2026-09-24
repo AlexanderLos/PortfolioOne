@@ -40,7 +40,7 @@ export function Hero() {
             now solo founder of{" "}
             <a
               href="#work"
-              className="font-medium text-fg underline decoration-teal/50 decoration-1 underline-offset-4 transition-colors hover:decoration-teal-bright"
+              className="font-medium text-fg underline decoration-accent/50 decoration-1 underline-offset-4 transition-colors hover:decoration-accent-bright"
             >
               Oakrift
             </a>{" "}
@@ -56,7 +56,7 @@ export function Hero() {
               <p className="mt-2 flex items-center gap-2 text-sm text-fg">
                 <span
                   aria-hidden
-                  className="pulse size-2 bg-teal"
+                  className="pulse size-2 bg-accent"
                 />
                 Open to work
               </p>
@@ -77,7 +77,7 @@ export function Hero() {
                   {cell.value}{" "}
                   <span
                     aria-hidden
-                    className="text-subtle transition-colors group-hover:text-teal-bright"
+                    className="text-subtle transition-colors group-hover:text-accent-bright"
                   >
                     ↗
                   </span>
@@ -101,7 +101,7 @@ export function Hero() {
       </div>
 
       <div className="relative h-px w-full bg-border" aria-hidden>
-        <div className="absolute left-1/2 top-0 h-px w-24 -translate-x-1/2 bg-linear-to-r from-transparent via-teal to-transparent sm:left-[max(2rem,calc((100vw-72rem)/2+2rem))] sm:translate-x-0" />
+        <div className="absolute left-1/2 top-0 h-px w-24 -translate-x-1/2 bg-linear-to-r from-transparent via-accent to-transparent sm:left-[max(2rem,calc((100vw-72rem)/2+2rem))] sm:translate-x-0" />
       </div>
     </section>
   );

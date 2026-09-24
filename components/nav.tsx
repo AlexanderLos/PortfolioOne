@@ -18,7 +18,7 @@ export function Nav() {
       >
         <a
           href="/"
-          className="whitespace-nowrap font-mono text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-fg transition-colors hover:text-teal-bright"
+          className="whitespace-nowrap font-mono text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-fg transition-colors hover:text-accent-bright"
         >
           A. De Los Santos
         </a>
