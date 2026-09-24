@@ -44,7 +44,6 @@ export const experience: ExperienceEntry[] = [
     role: "Founder & Engineer",
     period: "Sep 2025 — Present",
     location: "Miramar, FL",
-    current: true,
     highlights: [
       "Solo-built and launched an AI-powered media intelligence B2B SaaS, live in production.",
       "Direct Claude Code agents across the full codebase — multi-agent orchestration, dynamic workflows, and pre-tool-use governance hooks.",

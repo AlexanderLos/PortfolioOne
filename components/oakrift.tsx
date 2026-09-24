@@ -71,11 +71,6 @@ export function Oakrift() {
           </div>
           <dl className="self-start lg:col-span-5">
             {[
-              {
-                k: "Status",
-                v: "Active",
-                cls: "text-teal",
-              },
               { k: "Team", v: "1 — design, code, ops", cls: "text-fg" },
               {
                 k: "Stack",
