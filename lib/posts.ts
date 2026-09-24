@@ -34,7 +34,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "There are plenty of great stories from those years too. At Accenture I was made to build entire pipelines with Azure Pipelines and read through multiple stored procedures to track down errors. At Optum I built a microservice that became a monolith down the line once more chefs entered the kitchen. Through all of it, my domain knowledge and my ability to think through a feature, produce it, and talk through it became a really, really valuable skill to have.",
+        text: "There are plenty of great stories from those years too. At Accenture I built healthcare data pipelines with Azure Data Factory and Databricks, and dug through an environment with 400+ pipelines to track down errors and duplicate records. At Optum I built a microservice that became a monolith down the line once more chefs entered the kitchen. Through all of it, my domain knowledge and my ability to think through a feature, produce it, and talk through it became a really, really valuable skill to have.",
       },
       {
         type: "p",
@@ -43,11 +43,11 @@ export const posts: Post[] = [
       { type: "h2", text: "Building Oakrift" },
       {
         type: "p",
-        text: "I decided to build my own business, so I developed Oakrift. It's an AI powered SaaS that captures sentiment for brands and topics across news and social media. After building out the infrastructure, data, and application layers, I demoed the product to multiple companies and secured an enterprise paying client for a short time. It was a short lived dream, but it was my dream, and what it gave back for the hard work was exponential. I built an entire application end to end and learned the tradeoffs between tools, along with stewardship, managing finances, leadership, and building properly with agentic tooling, guardrails, and tests. You name it. It made me a better developer.",
+        text: "I decided to build my own business, so I developed Oakrift. It's an AI powered SaaS that captures sentiment for brands and topics across news and social media. After building out the infrastructure, data, and application layers, I demoed the product to multiple companies. It was a short lived dream, but it was my dream, and what it gave back for the hard work was exponential. I built an entire application end to end and learned the tradeoffs between tools, along with stewardship, managing finances, leadership, and building properly with agentic tooling, guardrails, and tests. You name it. It made me a better developer.",
       },
       {
         type: "p",
-        text: "For reasons I can't share, my client and I decided it would be best to revisit our working agreement sometime in the future. Today Oakrift is live and stable, and I maintain and improve it in the background. It is not a second job. Truth be told, I don't think I'm at a stage where I want to operate a company solo full time, especially when competitors run businesses like this with teams of 200 or more. It feels like the right time to join something larger than myself and learn as much as I can from a team that builds and ships daily and owns its features.",
+        text: "Today Oakrift is live and stable, and I maintain and improve it in the background. It is not a second job. Truth be told, I don't think I'm at a stage where I want to operate a company solo full time, especially when competitors run businesses like this with teams of 200 or more. It feels like the right time to join something larger than myself and learn as much as I can from a team that builds and ships daily and owns its features.",
       },
       {
         type: "p",

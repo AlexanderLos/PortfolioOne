@@ -1,7 +1,7 @@
 export const profile = {
   name: "Alexander De Los Santos",
   title: "Full Stack Software Engineer",
-  location: "Miami, FL",
+  location: "Miramar, FL",
   email: "alexander.dlosant@gmail.com",
   github: "https://github.com/AlexanderLos",
   linkedin: "https://www.linkedin.com/in/alexander-de-los-santos/",
@@ -27,7 +27,6 @@ export const experience: ExperienceEntry[] = [
       "Owned critical .NET and Hangfire background jobs for healthcare claims processing. Resolved a production failure that had been open for months by diagnosing 13 distinct issues across managed-identity authentication, SQL schema ownership, and Terraform database provisioning, restoring the jobs across every Azure Government environment.",
       "Cut a SQL Server data extraction pipeline from 11 hours to under 4 minutes.",
       "Authored Terraform modules provisioning Event Hubs, Storage, and RBAC across FedRAMP-compliant Azure Government Cloud environments.",
-      "Kept core systems running as the team contracted, owning everything from root-cause debugging through cross-environment deployment.",
     ],
   },
   {
@@ -36,25 +35,24 @@ export const experience: ExperienceEntry[] = [
     period: "Aug 2024 — Mar 2025",
     location: "Remote",
     highlights: [
-      "Built Azure Data Factory pipelines automating healthcare data workflows and integrations.",
-      "Developed Azure Databricks notebooks and SQL stored procedures for healthcare data transformation and analysis.",
-      "Managed CI/CD releases with Azure DevOps Pipelines, deploying data workflows across dev, test, and production environments.",
+      "Built healthcare data pipelines with Azure Data Factory, Databricks (PySpark), and SQL.",
+      "Investigated Databricks dependencies in an Azure Data Factory environment with 400+ pipelines, measured storage use, and flagged duplicate records as defects for the team to fix.",
     ],
   },
   {
     company: "Oakrift",
     role: "Founder & Engineer",
     period: "Sep 2025 — Present",
-    location: "Miami, FL",
+    location: "Miramar, FL",
     current: true,
     highlights: [
-      "Solo-built and launched an AI-powered media intelligence B2B SaaS, live in production and served a paying enterprise customer.",
+      "Solo-built and launched an AI-powered media intelligence B2B SaaS, live in production.",
       "Direct Claude Code agents across the full codebase — multi-agent orchestration, dynamic workflows, and pre-tool-use governance hooks.",
     ],
   },
   {
     company: "General Assembly",
-    role: "Software Engineering Fellow",
+    role: "Student Software Engineer",
     period: "Jul 2023 — Dec 2023",
     location: "Remote",
     highlights: [
@@ -84,6 +82,8 @@ export const skillGroups: SkillGroup[] = [
       ".NET",
       "Prisma",
       "PostgreSQL (Neon)",
+      "SQL Server",
+      "Redis",
       "REST APIs",
       "NextAuth.js",
       "Stripe",
@@ -91,7 +91,15 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Cloud & Infrastructure",
-    skills: ["Azure", "AWS", "Terraform", "Docker", "Kubernetes", "Vercel"],
+    skills: [
+      "Azure",
+      "AWS",
+      "Terraform",
+      "Docker",
+      "Kubernetes",
+      "Azure DevOps",
+      "Vercel",
+    ],
   },
   {
     label: "DevOps & Observability",
@@ -107,13 +115,15 @@ export const skillGroups: SkillGroup[] = [
     label: "AI & Agentic Development",
     skills: [
       "Claude Code (multi-agent orchestration)",
+      "Codex",
       "Claude API",
       "OpenAI API",
+      "Agentic loops",
+      "MCP servers",
+      "Plugins & hooks",
+      "Grok Bot",
       "LLM application architecture",
       "Embeddings & semantic analysis",
-      "RAG pipelines",
-      "LLM cost & quota optimization",
-      "MCP integrations",
     ],
   },
 ];
@@ -121,7 +131,7 @@ export const skillGroups: SkillGroup[] = [
 export const oakrift = {
   url: "https://oakrift.com",
   description:
-    "An enterprise B2B SaaS that reads the media landscape for its clients — live in production, served a paying enterprise customer. Every layer, from ingestion to billing, designed, shipped, and operated by one engineer.",
+    "An enterprise B2B SaaS that reads the media landscape — live in production. Every layer, from ingestion to billing, designed, shipped, and operated by one engineer.",
   features: [
     {
       title: "Research-augmented executive briefs",
@@ -140,7 +150,7 @@ export const oakrift = {
     {
       title: "Multi-source ingestion",
       detail:
-        "Thousands of media items weekly across 8+ social, video, news, and broadcast channels, with per-client cost controls.",
+        "Thousands of media items weekly across 8+ social, video, news, and broadcast channels, with per-tenant spend limits.",
     },
     {
       title: "Production SaaS foundations",

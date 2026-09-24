@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "Claude Code",
     "Next.js",
     "TypeScript",
-    "Miami",
+    "Miramar",
   ],
   authors: [{ name: "Alexander De Los Santos" }],
   creator: "Alexander De Los Santos",
