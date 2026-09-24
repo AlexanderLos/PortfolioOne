@@ -129,7 +129,7 @@ export const skillGroups: SkillGroup[] = [
 ];
 
 export const oakrift = {
-  url: "https://oakrift.com",
+  url: "https://oakrift.com/features",
   description:
     "An enterprise B2B SaaS that reads the media landscape — live in production. Every layer, from ingestion to billing, designed, shipped, and operated by one engineer.",
   features: [
