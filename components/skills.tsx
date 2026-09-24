@@ -18,7 +18,7 @@ export function Skills() {
                   : ""
               } ${fillsRow ? "sm:col-span-2 lg:col-span-2" : ""}`}
             >
-              <h3 className="flex items-baseline justify-between gap-4 font-mono text-[0.6875rem] font-medium uppercase tracking-[0.18em] text-accent">
+              <h3 className="flex items-baseline justify-between gap-4 font-sans text-[0.6875rem] font-medium uppercase tracking-[0.18em] text-accent">
                 {group.label}
                 <span className="tabular-nums text-subtle">
                   {String(group.skills.length).padStart(2, "0")}

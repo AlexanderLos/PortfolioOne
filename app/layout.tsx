@@ -1,16 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, Space_Grotesk, Space_Mono } from "next/font/google";
+import { Figtree, Fraunces, Space_Mono } from "next/font/google";
 import "./globals.css";
 
-const dmSans = DM_Sans({
+const figtree = Figtree({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-figtree",
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  axes: ["opsz", "SOFT"],
+  variable: "--font-fraunces",
   display: "swap",
 });
 
@@ -84,7 +85,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSans.variable} ${spaceGrotesk.variable} ${spaceMono.variable}`}
+      className={`${figtree.variable} ${fraunces.variable} ${spaceMono.variable}`}
     >
       <body>
         {children}

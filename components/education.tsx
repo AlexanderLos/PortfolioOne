@@ -21,14 +21,14 @@ export function Education() {
                   <p className="flex flex-wrap items-center gap-2.5 text-[1.0625rem] font-medium text-fg">
                     {entry.institution}
                     {entry.note && (
-                      <span className="rounded-full bg-accent/10 px-2.5 py-1 font-mono text-[0.625rem] font-medium uppercase tracking-[0.14em] text-accent-bright">
+                      <span className="rounded-full bg-accent/10 px-2.5 py-1 font-sans text-[0.625rem] font-medium uppercase tracking-[0.14em] text-accent-bright">
                         {entry.note}
                       </span>
                     )}
                   </p>
                   <p className="mt-1 text-sm text-muted">{entry.credential}</p>
                 </div>
-                <p className="whitespace-nowrap font-mono text-[0.6875rem] uppercase tracking-[0.14em] tabular-nums text-subtle">
+                <p className="whitespace-nowrap font-sans text-[0.6875rem] uppercase tracking-[0.14em] tabular-nums text-subtle">
                   {entry.period}
                 </p>
               </div>
@@ -39,14 +39,14 @@ export function Education() {
             {certifications.map((cert) => (
               <span
                 key={cert.name}
-                className="rounded-md border border-border bg-panel px-3 py-1.5 font-mono text-[0.6875rem] tabular-nums text-muted"
+                className="rounded-md border border-border bg-panel px-3 py-1.5 font-sans text-[0.6875rem] tabular-nums text-muted"
               >
                 {cert.name} · {cert.year}
               </span>
             ))}
           </div>
 
-          <p className="mt-6 font-mono text-[0.625rem] uppercase tracking-[0.18em] text-subtle">
+          <p className="mt-6 font-sans text-[0.625rem] uppercase tracking-[0.18em] text-subtle">
             Languages — {languages.join(" · ")}
           </p>
         </div>

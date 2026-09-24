@@ -11,7 +11,7 @@ export function Eyebrow({
 }) {
   return (
     <Tag
-      className={`flex flex-wrap items-center gap-x-2.5 gap-y-1 font-mono text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-subtle ${
+      className={`flex flex-wrap items-center gap-x-2.5 gap-y-1 font-sans text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-subtle ${
         centered ? "justify-center" : ""
       }`}
     >

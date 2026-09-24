@@ -17,7 +17,7 @@ export function Experience() {
               className="group border-t border-border first:border-t-0"
             >
               <div className="-mx-4 gap-6 rounded-lg px-4 py-8 transition-colors group-first:pt-0 md:grid md:grid-cols-[10.5rem_1fr] hover:bg-raised/60">
-                <p className="pt-0.5 font-mono text-[0.6875rem] uppercase tracking-[0.14em] tabular-nums text-subtle">
+                <p className="pt-0.5 font-sans text-[0.6875rem] uppercase tracking-[0.14em] tabular-nums text-subtle">
                   {entry.period}
                 </p>
                 <div className="mt-3 md:mt-0">

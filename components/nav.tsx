@@ -18,12 +18,12 @@ export function Nav() {
       >
         <a
           href="/"
-          className="whitespace-nowrap font-mono text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-fg transition-colors hover:text-accent-bright"
+          className="whitespace-nowrap font-sans text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-fg transition-colors hover:text-accent-bright"
         >
           A. De Los Santos
         </a>
         <div className="flex items-center gap-3 md:gap-6">
-          <ul className="hidden items-center gap-6 font-mono text-[0.6875rem] uppercase tracking-[0.18em] md:flex">
+          <ul className="hidden items-center gap-6 font-sans text-[0.6875rem] uppercase tracking-[0.18em] md:flex">
             {items.map((item) => (
               <li key={item.href}>
                 <a href={item.href} className={navLinkClass(item.accent)}>
@@ -35,7 +35,7 @@ export function Nav() {
           <MobileMenu items={items} />
           <a
             href="/#contact"
-            className="whitespace-nowrap rounded-md bg-fg px-4 py-2 font-mono text-[0.625rem] font-medium uppercase tracking-[0.18em] text-bg transition-opacity hover:opacity-75"
+            className="whitespace-nowrap rounded-md bg-fg px-4 py-2 font-sans text-[0.625rem] font-medium uppercase tracking-[0.18em] text-bg transition-opacity hover:opacity-75"
           >
             Open to work
           </a>

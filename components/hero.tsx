@@ -29,7 +29,7 @@ export function Hero() {
       <div className="mx-auto grid min-h-[88svh] max-w-6xl content-center items-center gap-x-16 gap-y-10 px-5 py-24 sm:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,24rem)]">
         <div className="order-last lg:order-none">
           <Eyebrow label={`${profile.location} — ${profile.title}`} />
-          <h1 className="mt-8 font-display text-[clamp(2.75rem,7.5vw,5.25rem)] font-bold leading-[1.02] tracking-[-0.035em] text-balance text-fg">
+          <h1 className="mt-8 font-display text-[clamp(2.75rem,7.5vw,5.25rem)] font-bold leading-[1.02] tracking-[-0.02em] text-balance text-fg">
             Alexander
             <br />
             De Los Santos
@@ -50,7 +50,7 @@ export function Hero() {
 
           <div className="mt-14 grid max-w-xl grid-cols-2 gap-px border border-border bg-border">
             <div className="bg-bg p-4">
-              <p className="font-mono text-[0.625rem] font-medium uppercase tracking-[0.18em] text-subtle">
+              <p className="font-sans text-[0.625rem] font-medium uppercase tracking-[0.18em] text-subtle">
                 Status
               </p>
               <p className="mt-2 flex items-center gap-2 text-sm text-fg">
@@ -70,7 +70,7 @@ export function Hero() {
                   : {})}
                 className="group bg-bg p-4 transition-colors hover:bg-raised"
               >
-                <p className="font-mono text-[0.625rem] font-medium uppercase tracking-[0.18em] text-subtle">
+                <p className="font-sans text-[0.625rem] font-medium uppercase tracking-[0.18em] text-subtle">
                   {cell.label}
                 </p>
                 <p className="mt-2 truncate text-sm text-fg">

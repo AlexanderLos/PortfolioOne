@@ -61,7 +61,7 @@ export function MobileMenu({ items }: { items: NavItem[] }) {
         hidden={!open}
         className="absolute inset-x-0 top-full border-b border-border bg-bg"
       >
-        <ul className="mx-auto flex max-w-6xl flex-col px-5 py-2 font-mono text-[0.6875rem] uppercase tracking-[0.18em] sm:px-8">
+        <ul className="mx-auto flex max-w-6xl flex-col px-5 py-2 font-sans text-[0.6875rem] uppercase tracking-[0.18em] sm:px-8">
           {items.map((item) => (
             <li key={item.href}>
               <a

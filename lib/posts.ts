@@ -56,7 +56,7 @@ export const posts: Post[] = [
       { type: "h2", text: "What's next" },
       {
         type: "p",
-        text: "The landscape for software engineering has changed a lot, and even though I've been getting some interviews lately, the criteria keep changing. As much as this stretch of my life sucks, it's actually been really good for growth. I've gone to networking events solo, I built and presented a project at a Claude Code event, and this week I'm going to a Grok event and a Latino Claude event.",
+        text: "The landscape for software engineering has changed a lot, and even though I've been getting some interviews lately, the criteria keep changing. As much as this part of the job application sucks, it's actually been really good for growth. I've gone to networking events solo, I built and presented a project at a Claude Code event, and this week I'm going to a Grok event and a Latino Claude event.",
       },
       {
         type: "p",

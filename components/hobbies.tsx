@@ -13,7 +13,7 @@ export function Hobbies() {
         <Eyebrow as="h2" index="06" label="Off the clock" />
         <div className="mt-10 grid gap-x-12 gap-y-12 sm:grid-cols-2">
           <div>
-            <p className="font-mono text-[0.625rem] font-medium tabular-nums tracking-[0.18em] text-subtle">
+            <p className="font-sans text-[0.625rem] font-medium tabular-nums tracking-[0.18em] text-subtle">
               01
             </p>
             <h3 className="mt-2 font-display text-xl font-semibold tracking-[-0.02em] text-fg">
@@ -26,7 +26,7 @@ export function Hobbies() {
             </p>
           </div>
           <div>
-            <p className="font-mono text-[0.625rem] font-medium tabular-nums tracking-[0.18em] text-subtle">
+            <p className="font-sans text-[0.625rem] font-medium tabular-nums tracking-[0.18em] text-subtle">
               02
             </p>
             <h3 className="mt-2 font-display text-xl font-semibold tracking-[-0.02em] text-fg">
@@ -38,7 +38,7 @@ export function Hobbies() {
             </p>
           </div>
           <div>
-            <p className="font-mono text-[0.625rem] font-medium tabular-nums tracking-[0.18em] text-subtle">
+            <p className="font-sans text-[0.625rem] font-medium tabular-nums tracking-[0.18em] text-subtle">
               03
             </p>
             <h3 className="mt-2 font-display text-xl font-semibold tracking-[-0.02em] text-fg">
@@ -57,7 +57,7 @@ export function Hobbies() {
                   <span className="text-sm font-medium text-fg">
                     {spot.name}
                   </span>
-                  <span className="whitespace-nowrap font-mono text-[0.625rem] uppercase tracking-[0.14em] text-subtle">
+                  <span className="whitespace-nowrap font-sans text-[0.625rem] uppercase tracking-[0.14em] text-subtle">
                     {spot.place}
                   </span>
                 </li>
