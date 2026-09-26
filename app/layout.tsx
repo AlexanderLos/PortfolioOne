@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "%s — Alexander De Los Santos",
   },
   description:
-    "Full stack software engineer shipping LLM-powered SaaS end to end. Founder of Oakrift — a media intelligence platform. Enterprise backend foundation in healthcare (.NET, Azure, Kubernetes).",
+    "Full stack software engineer shipping LLM powered SaaS end to end. Founder of Oakrift, a media intelligence platform. Enterprise backend foundation in healthcare (.NET, Azure, Kubernetes).",
   keywords: [
     "Alexander De Los Santos",
     "Full Stack Software Engineer",
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
     siteName: "Alexander De Los Santos",
     title: "Alexander De Los Santos — Full Stack Software Engineer",
     description:
-      "Full stack software engineer shipping LLM-powered SaaS end to end. Founder of Oakrift — a media intelligence platform.",
+      "Full stack software engineer shipping LLM powered SaaS end to end. Founder of Oakrift, a media intelligence platform.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Alexander De Los Santos — Full Stack Software Engineer",
     description:
-      "Full stack software engineer shipping LLM-powered SaaS end to end. Founder of Oakrift — a media intelligence platform.",
+      "Full stack software engineer shipping LLM powered SaaS end to end. Founder of Oakrift, a media intelligence platform.",
   },
   robots: {
     index: true,

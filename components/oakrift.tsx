@@ -57,7 +57,7 @@ export function Oakrift() {
       <div className="reveal">
         <Eyebrow index="02" label="Featured work · 2025 — Present" />
         <h2 className="mt-6 max-w-3xl font-display text-[clamp(1.75rem,3.5vw,2.5rem)] font-semibold leading-[1.15] tracking-[-0.015em] text-fg">
-          Oakrift — media intelligence, built solo.
+          Oakrift. Media intelligence, built solo.
         </h2>
 
         <div className="mt-10 grid gap-x-16 gap-y-10 lg:grid-cols-12">
@@ -65,8 +65,8 @@ export function Oakrift() {
             <p>{oakrift.description}</p>
             <p>
               Built and operated with Claude Code agents directed across the
-              full codebase — multi-agent orchestration, dynamic workflows, and
-              pre-tool-use governance hooks.
+              full codebase, from multi-agent orchestration and dynamic
+              workflows to pre-tool-use governance hooks.
             </p>
           </div>
           <dl className="self-start lg:col-span-5">

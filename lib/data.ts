@@ -46,7 +46,7 @@ export const experience: ExperienceEntry[] = [
     location: "Miramar, FL",
     highlights: [
       "Solo-built and launched an AI-powered media intelligence B2B SaaS, live in production.",
-      "Direct Claude Code agents across the full codebase — multi-agent orchestration, dynamic workflows, and pre-tool-use governance hooks.",
+      "Direct Claude Code agents across the full codebase, from multi-agent orchestration and dynamic workflows to pre-tool-use governance hooks.",
     ],
   },
   {
@@ -130,7 +130,7 @@ export const skillGroups: SkillGroup[] = [
 export const oakrift = {
   url: "https://oakrift.com/features",
   description:
-    "An enterprise B2B SaaS that reads the media landscape — live in production. Every layer, from ingestion to billing, designed, shipped, and operated by one engineer.",
+    "An enterprise B2B SaaS that reads the media landscape, live in production. Every layer, from ingestion to billing, designed, shipped, and operated by one engineer.",
   features: [
     {
       title: "Research-augmented executive briefs",
@@ -154,7 +154,7 @@ export const oakrift = {
     {
       title: "Production SaaS foundations",
       detail:
-        "Stripe billing, auth, RBAC team workspaces, rate limiting, and security hardening — run solo, end to end.",
+        "Stripe billing, auth, RBAC team workspaces, rate limiting, and security hardening, all run solo, end to end.",
     },
   ],
   screenshots: [
