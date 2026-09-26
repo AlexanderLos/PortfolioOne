@@ -1,4 +1,26 @@
-import type { PostBlock } from "@/lib/posts";
+import Image from "next/image";
+import type { PostBlock, PostImage } from "@/lib/posts";
+
+function Figure({ image, sizes }: { image: PostImage; sizes: string }) {
+  return (
+    <figure className="overflow-hidden rounded-xl border border-border bg-raised">
+      <Image
+        src={image.src}
+        alt={image.alt}
+        width={image.width}
+        height={image.height}
+        sizes={sizes}
+        quality={90}
+        className="block h-auto w-full"
+      />
+      {image.caption && (
+        <figcaption className="border-t border-border px-4 py-2.5 font-sans text-[0.625rem] uppercase tracking-[0.18em] text-subtle">
+          {image.caption}
+        </figcaption>
+      )}
+    </figure>
+  );
+}
 
 export function PostBody({ blocks }: { blocks: PostBlock[] }) {
   return (
@@ -35,6 +57,27 @@ export function PostBody({ blocks }: { blocks: PostBlock[] }) {
               >
                 {block.text}
               </blockquote>
+            );
+          case "image":
+            return (
+              <div key={i} className="py-2">
+                <Figure
+                  image={block}
+                  sizes="(min-width: 768px) 42rem, calc(100vw - 2.5rem)"
+                />
+              </div>
+            );
+          case "gallery":
+            return (
+              <div key={i} className="grid gap-4 py-2 sm:grid-cols-2">
+                {block.images.map((image) => (
+                  <Figure
+                    key={image.src}
+                    image={image}
+                    sizes="(min-width: 768px) 21rem, calc(100vw - 2.5rem)"
+                  />
+                ))}
+              </div>
             );
           case "code":
             return (

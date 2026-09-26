@@ -1,9 +1,19 @@
+export type PostImage = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  caption?: string;
+};
+
 export type PostBlock =
   | { type: "p"; text: string }
   | { type: "h2"; text: string }
   | { type: "ul"; items: string[] }
   | { type: "quote"; text: string }
-  | { type: "code"; lang?: string; code: string };
+  | { type: "code"; lang?: string; code: string }
+  | ({ type: "image" } & PostImage)
+  | { type: "gallery"; images: PostImage[] };
 
 export type Post = {
   slug: string;
@@ -12,10 +22,90 @@ export type Post = {
   /** ISO date, e.g. "2026-09-21" */
   date: string;
   tags: string[];
+  /** Drafts render in `next dev` only and never in production builds. */
+  draft?: boolean;
   body: PostBlock[];
 };
 
 export const posts: Post[] = [
+  {
+    slug: "water-neighbor-claude-code-build-day",
+    title: "Water Neighbor at Claude Code Build Day.",
+    summary:
+      "[Fill in. One or two sentences on what Water Neighbor is and what got built at the Claude Code build day.]",
+    date: "2026-09-27",
+    tags: ["Build day", "Water Neighbor"],
+    draft: true,
+    body: [
+      {
+        type: "p",
+        text: "[Fill in. Set the scene. What the Claude Code build day was, where it was, who was there, and why you showed up.]",
+      },
+      {
+        type: "image",
+        src: "/blog/water-neighbor-1.png",
+        alt: "[Describe the photo]",
+        width: 1600,
+        height: 1000,
+        caption: "[Caption for the first photo]",
+      },
+      { type: "h2", text: "The problem" },
+      {
+        type: "p",
+        text: "[Fill in. The ongoing water crisis in Puerto Rico as you understand it, and the gap Water Neighbor is meant to fill for the people dealing with it.]",
+      },
+      { type: "h2", text: "What we built" },
+      {
+        type: "p",
+        text: "[Fill in. Water Neighbor, built with Cesar Melendez. What it does for someone in Puerto Rico who needs water, and what the first version actually shipped that day.]",
+      },
+      {
+        type: "ul",
+        items: [
+          "[Feature or piece one]",
+          "[Feature or piece two]",
+          "[Feature or piece three]",
+        ],
+      },
+      {
+        type: "gallery",
+        images: [
+          {
+            src: "/blog/water-neighbor-2.png",
+            alt: "[Describe the photo]",
+            width: 1600,
+            height: 1000,
+            caption: "[Caption]",
+          },
+          {
+            src: "/blog/water-neighbor-3.png",
+            alt: "[Describe the photo]",
+            width: 1600,
+            height: 1000,
+            caption: "[Caption]",
+          },
+        ],
+      },
+      { type: "h2", text: "How we built it with Claude Code" },
+      {
+        type: "p",
+        text: "[Fill in. How the work was split between you, Cesar, and the agents. What Claude Code handled well, where it needed direction, and any hooks, plugins, or workflows you leaned on.]",
+      },
+      {
+        type: "image",
+        src: "/blog/water-neighbor-4.png",
+        alt: "[Describe the photo]",
+        width: 1600,
+        height: 1000,
+        caption: "[Caption for the last photo]",
+      },
+      { type: "h2", text: "What's next for Water Neighbor" },
+      {
+        type: "p",
+        text: "[Fill in. Where the project goes from here, how people can use it or help, and a thank you to Cesar and the organizers.]",
+      },
+    ],
+  },
   {
     slug: "why-i-left-what-i-built-and-whats-next",
     title: "Why I left, what I built, and what's next.",
@@ -75,12 +165,16 @@ export const posts: Post[] = [
   },
 ];
 
+const showDrafts = process.env.NODE_ENV === "development";
+
 export function getPosts(): Post[] {
-  return [...posts].sort((a, b) => (a.date < b.date ? 1 : -1));
+  return posts
+    .filter((p) => showDrafts || !p.draft)
+    .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
 export function getPost(slug: string): Post | undefined {
-  return posts.find((p) => p.slug === slug);
+  return getPosts().find((p) => p.slug === slug);
 }
 
 export function formatDate(iso: string): string {
