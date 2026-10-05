@@ -26,13 +26,10 @@ export const experience: ExperienceEntry[] = [
     location: "Remote",
     highlights: [
       "Built .NET microservices and Hangfire jobs that moved claims and payment files between SFTP servers and Azure for the VA Community Care Network.",
-      "Used PGP encryption and decryption to protect patient data in Azure Government Cloud.",
       "Cut a SQL Server pipeline from 11 hours to under 4 minutes using indexed lookups, caching, and parallel processing, turning an overnight batch into an on demand job.",
       "Fixed core claims jobs that had been failing in production for months, resolving 13 issues across Azure authentication, SQL schema ownership, and Terraform.",
       "Authored Terraform modules provisioning Event Hubs, Storage, and RBAC across FedRAMP compliant Azure Government Cloud environments.",
-      "Led a Kubernetes proof of concept to test parallel claims submission.",
       "Led backlog refinement, split features into stories the team could build and test, and scoped a payments epic across three teams.",
-      "Explained technical decisions to business leadership, wrote system documentation, and ran training and knowledge transfer sessions for teammates.",
     ],
   },
   {
