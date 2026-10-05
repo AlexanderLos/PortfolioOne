@@ -45,8 +45,8 @@ export function Hobbies() {
               Food
             </h3>
             <p className="mt-2.5 text-[0.9375rem] leading-[1.7] text-muted">
-              On a long-running search for South Florida&apos;s best plates. If
-              you&apos;re reading this and ever in the area, start here:
+              On a long running search for South Florida&apos;s best plates. If
+              you&apos;re reading this and ever in the area, start with these.
             </p>
             <ul className="mt-4 border-b border-border">
               {spots.map((spot) => (
