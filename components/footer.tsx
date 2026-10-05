@@ -11,7 +11,7 @@ export function Footer() {
         <span>{profile.location}</span>
         <span className="flex items-center gap-4">
           <a
-            href={profile.resume}
+            href={profile.resumePage}
             target="_blank"
             rel="noopener noreferrer"
             className="text-subtle transition-colors hover:text-accent-bright"

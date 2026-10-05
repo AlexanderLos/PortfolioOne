@@ -6,6 +6,7 @@ export const profile = {
   github: "https://github.com/AlexanderLos",
   linkedin: "https://www.linkedin.com/in/alexander-de-los-santos/",
   resume: "/Alexander_De_Los_Santos_Resume.pdf",
+  resumePage: "/resume",
 } as const;
 
 export type ExperienceEntry = {

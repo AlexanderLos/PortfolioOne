@@ -18,7 +18,7 @@ const cells = [
   {
     label: "Resume",
     value: "View PDF",
-    href: profile.resume,
+    href: profile.resumePage,
     external: true,
   },
 ] as const;

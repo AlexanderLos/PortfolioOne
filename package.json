@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "resume:preview": "pdftoppm -png -r 200 -singlefile public/Alexander_De_Los_Santos_Resume.pdf public/resume-preview"
   },
   "dependencies": {
     "next": "^16.0.0",
