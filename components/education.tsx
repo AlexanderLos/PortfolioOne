@@ -47,7 +47,7 @@ export function Education() {
           </div>
 
           <p className="mt-6 font-sans text-[0.625rem] uppercase tracking-[0.18em] text-subtle">
-            Languages — {languages.join(" · ")}
+            Bilingual in {languages.join(" and ")}
           </p>
         </div>
       </div>

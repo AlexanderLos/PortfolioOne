@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { oakrift } from "@/lib/data";
 import { Eyebrow, Section } from "@/components/ui";
 
@@ -57,26 +58,27 @@ export function Oakrift() {
       <div className="reveal">
         <Eyebrow index="02" label="Featured work · 2025 — Present" />
         <h2 className="mt-6 max-w-3xl font-display text-[clamp(1.75rem,3.5vw,2.5rem)] font-semibold leading-[1.15] tracking-[-0.015em] text-fg">
-          Oakrift. Media intelligence, built solo.
+          Oakrift. Media intelligence, built end to end.
         </h2>
 
         <div className="mt-10 grid gap-x-16 gap-y-10 lg:grid-cols-12">
           <div className="space-y-5 text-[1.0625rem] leading-[1.7] text-muted lg:col-span-7">
             <p>{oakrift.description}</p>
             <p>
-              Built and operated with Claude Code agents directed across the
-              full codebase, from multi-agent orchestration and dynamic
-              workflows to pre-tool-use governance hooks.
+              Development runs through a custom Claude Code plugin where agent
+              teams implement, verify, and score changes, and hooks block
+              changes to the production database.
             </p>
           </div>
           <dl className="self-start lg:col-span-5">
             {[
-              { k: "Team", v: "1 — design, code, ops", cls: "text-fg" },
+              { k: "Role", v: "Founder & Engineer", cls: "text-fg" },
               {
                 k: "Stack",
-                v: "Next.js · LLM pipelines · Postgres",
+                v: "TypeScript · Next.js · Postgres · Redis",
                 cls: "text-fg",
               },
+              { k: "AI", v: "Claude & OpenAI APIs", cls: "text-fg" },
             ].map((row) => (
               <div
                 key={row.k}
@@ -134,12 +136,12 @@ export function Oakrift() {
         >
           Visit oakrift.com <span aria-hidden>↗</span>
         </a>
-        <a
-          href="#experience"
+        <Link
+          href="/blog/why-i-left-what-i-built-and-whats-next"
           className="rounded-lg border border-border px-5 py-3 font-sans text-xs font-medium uppercase tracking-[0.14em] text-muted transition-colors hover:border-border-strong hover:text-fg"
         >
-          How it was built <span aria-hidden>↑</span>
-        </a>
+          What building it taught me <span aria-hidden>→</span>
+        </Link>
       </div>
     </Section>
   );

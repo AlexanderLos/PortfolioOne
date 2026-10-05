@@ -43,7 +43,7 @@ export default async function OpengraphImage() {
             }}
           />
           <span style={{ display: "flex" }}>
-            Full Stack Software Engineer — AI SaaS
+            Full Stack Software Engineer · Miramar, FL
           </span>
         </div>
 

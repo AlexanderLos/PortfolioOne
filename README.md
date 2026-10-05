@@ -19,4 +19,4 @@ Open http://localhost:3000.
 - `components/` — section components (hero, about, work, contact, footer, nav)
 - `lib/data.ts` — work timeline data
 - `lib/posts.ts` — blog posts (add a new entry to the `posts` array to publish)
-- `public/` — static assets (resume.pdf)
+- `public/` — static assets (Alexander_De_Los_Santos_Resume.pdf, with /resume.pdf redirecting to it)

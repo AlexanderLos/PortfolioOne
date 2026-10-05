@@ -11,6 +11,14 @@ export function Footer() {
         <span>{profile.location}</span>
         <span className="flex items-center gap-4">
           <a
+            href={profile.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-subtle transition-colors hover:text-accent-bright"
+          >
+            Resume
+          </a>
+          <a
             href={profile.github}
             target="_blank"
             rel="noopener noreferrer"

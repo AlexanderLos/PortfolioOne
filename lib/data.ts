@@ -5,7 +5,7 @@ export const profile = {
   email: "alexander.dlosant@gmail.com",
   github: "https://github.com/AlexanderLos",
   linkedin: "https://www.linkedin.com/in/alexander-de-los-santos/",
-  resume: "/resume.pdf",
+  resume: "/Alexander_De_Los_Santos_Resume.pdf",
 } as const;
 
 export type ExperienceEntry = {
@@ -19,43 +19,30 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
-    company: "Optum",
-    role: "Software Engineer (Contract)",
+    company: "Optum (UnitedHealth Group)",
+    role: "Software Engineer via Brooksource",
     period: "Mar 2025 — Jun 2026",
     location: "Remote",
     highlights: [
-      "Owned critical .NET and Hangfire background jobs for healthcare claims processing. Resolved a production failure that had been open for months by diagnosing 13 distinct issues across managed-identity authentication, SQL schema ownership, and Terraform database provisioning, restoring the jobs across every Azure Government environment.",
-      "Cut a SQL Server data extraction pipeline from 11 hours to under 4 minutes.",
-      "Authored Terraform modules provisioning Event Hubs, Storage, and RBAC across FedRAMP-compliant Azure Government Cloud environments.",
+      "Built .NET microservices and Hangfire jobs that moved claims and payment files between SFTP servers and Azure for the VA Community Care Network.",
+      "Used PGP encryption and decryption to protect patient data in Azure Government Cloud.",
+      "Cut a SQL Server pipeline from 11 hours to under 4 minutes using indexed lookups, caching, and parallel processing, turning an overnight batch into an on demand job.",
+      "Fixed core claims jobs that had been failing in production for months, resolving 13 issues across Azure authentication, SQL schema ownership, and Terraform.",
+      "Authored Terraform modules provisioning Event Hubs, Storage, and RBAC across FedRAMP compliant Azure Government Cloud environments.",
+      "Led a Kubernetes proof of concept to test parallel claims submission.",
+      "Led backlog refinement, split features into stories the team could build and test, and scoped a payments epic across three teams.",
+      "Explained technical decisions to business leadership, wrote system documentation, and ran training and knowledge transfer sessions for teammates.",
     ],
   },
   {
     company: "Accenture",
-    role: "IT Consultant (Contract)",
+    role: "IT Consultant via Brooksource",
     period: "Aug 2024 — Mar 2025",
     location: "Remote",
     highlights: [
       "Built healthcare data pipelines with Azure Data Factory, Databricks (PySpark), and SQL.",
+      "Analyzed and debugged SQL stored procedures to resolve data issues in the enterprise data warehouse.",
       "Investigated Databricks dependencies in an Azure Data Factory environment with 400+ pipelines, measured storage use, and flagged duplicate records as defects for the team to fix.",
-    ],
-  },
-  {
-    company: "Oakrift",
-    role: "Founder & Engineer",
-    period: "Sep 2025 — Present",
-    location: "Miramar, FL",
-    highlights: [
-      "Solo-built and launched an AI-powered media intelligence B2B SaaS, live in production.",
-      "Direct Claude Code agents across the full codebase, from multi-agent orchestration and dynamic workflows to pre-tool-use governance hooks.",
-    ],
-  },
-  {
-    company: "General Assembly",
-    role: "Student Software Engineer",
-    period: "Jul 2023 — Dec 2023",
-    location: "Remote",
-    highlights: [
-      "Completed 480+ hours of full-stack training; built and shipped multiple responsive web applications with React, Node.js, and Express.",
     ],
   },
 ];
@@ -113,15 +100,13 @@ export const skillGroups: SkillGroup[] = [
   {
     label: "AI & Agentic Development",
     skills: [
-      "Claude Code (multi-agent orchestration)",
+      "Claude Code",
       "Codex",
       "Claude API",
       "OpenAI API",
-      "Agentic loops",
       "MCP servers",
       "Plugins & hooks",
       "Grok Bot",
-      "LLM application architecture",
       "Embeddings & semantic analysis",
     ],
   },
@@ -130,31 +115,31 @@ export const skillGroups: SkillGroup[] = [
 export const oakrift = {
   url: "https://oakrift.com/features",
   description:
-    "An enterprise B2B SaaS that reads the media landscape, live in production. Every layer, from ingestion to billing, designed, shipped, and operated by one engineer.",
+    "A media intelligence SaaS that turns media coverage into sourced briefs and crisis alerts, live in production. I built it from ingestion to billing and handle production support and customer demos.",
   features: [
     {
-      title: "Research-augmented executive briefs",
+      title: "Sourced executive briefs",
       detail:
-        "Scheduled brief generation that turns a window of coverage into key storylines, tone movement, and likely questions.",
+        "Scheduled briefs that turn a window of coverage into key storylines, tone movement, and likely questions, with sources cited.",
     },
     {
       title: "Narrative drift detection",
       detail:
-        "Embedding-based topic modeling and statistical significance testing over time-series media data.",
+        "Topic modeling on embeddings, with statistical significance testing on media coverage over time.",
     },
     {
-      title: "Real-time crisis alerting",
+      title: "Crisis alerts in real time",
       detail: "Tiered severity alerts the moment coverage turns.",
     },
     {
-      title: "Multi-source ingestion",
+      title: "Media ingestion",
       detail:
-        "Thousands of media items weekly across 8+ social, video, news, and broadcast channels, with per-tenant spend limits.",
+        "Thousands of media items a week across 8+ social, video, news, and broadcast platforms, with spend limits for each customer.",
     },
     {
       title: "Production SaaS foundations",
       detail:
-        "Stripe billing, auth, RBAC team workspaces, rate limiting, and security hardening, all run solo, end to end.",
+        "Stripe billing, authentication, multitenant access controls with team workspaces, rate limits, monitoring, and security hardening.",
     },
   ],
   screenshots: [
@@ -187,16 +172,15 @@ export const education: EducationEntry[] = [
     period: "2022 — 2024",
   },
   {
-    institution: "Harvard Business School",
-    credential: "CORe — Credential of Readiness",
-    period: "2025 — 2026",
+    institution: "General Assembly",
+    credential: "Full Stack Software Engineering Certificate, 480+ hours of training",
+    period: "Jul 2023 — Dec 2023",
   },
 ];
 
 export const certifications = [
-  { name: "CKA — Certified Kubernetes Administrator", year: "2025" },
+  { name: "Certified Kubernetes Administrator (CKA)", year: "2025" },
   { name: "AWS Certified Developer Associate", year: "2024" },
-  { name: "General Assembly Certified Full Stack Developer", year: "2023" },
 ] as const;
 
-export const languages = ["English (fluent)", "Spanish (fluent)"] as const;
+export const languages = ["English", "Spanish"] as const;

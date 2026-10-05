@@ -31,6 +31,14 @@ export function Contact() {
         <p className="mt-7 max-w-md text-[1.0625rem] leading-[1.7] text-muted">
           Open to full stack, backend, and product engineering roles.
         </p>
+        <a
+          href={profile.resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-7 rounded-lg border border-border px-5 py-3 font-sans text-xs font-medium uppercase tracking-[0.14em] text-muted transition-colors hover:border-border-strong hover:text-fg"
+        >
+          View my resume <span aria-hidden>↗</span>
+        </a>
       </div>
     </Section>
   );
